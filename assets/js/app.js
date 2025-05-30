@@ -5,3 +5,21 @@ export function functionName () {
 }
 
 // Link til slider https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
+
+// Link til mega sej burger menu https://uxdesign.cc/the-menu-210bec7ad80c
+    const burgerBtn = document.getElementById('burgerMenu');
+    const sideNav = document.getElementById('sideNav');
+    const overlay = document.getElementById('overlay');
+  
+    export function burger() {burgerBtn.addEventListener('click', () => {
+      burgerBtn.classList.toggle('sideNav');
+      sideNav.classList.toggle('open');
+      overlay.classList.toggle('active');
+    });
+    overlay.addEventListener('click', () => {
+        sideNav.classList.remove('open');
+        overlay.classList.remove('active');
+        burgerBtn.classList.remove('sideNav','opened');
+
+      });
+    }

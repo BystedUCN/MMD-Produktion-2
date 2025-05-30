@@ -1,2 +1,2 @@
-import {functionName} from "./app.js";
-functionName() 
+import {burger} from "./app.js";
+burger();
