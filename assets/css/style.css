@@ -4,6 +4,7 @@
     /* Spacers */
     --mobileSmlSpacer: 10px;
     --mobileMedSpacer: 15px;
+    --mobileMedBigSpacer: 20px;
     --mobileBigSpacer: 25px;
     --smlSpacer: 15px;
     --medSacer: 25px;
@@ -110,7 +111,7 @@ body{
     position: fixed;
     top: 0;
     right: -50vw;
-    width: 50vw;
+    width: 210px;
     height: 100%;
     background: rgba(33, 80, 36, 0.95);
     z-index: 999;
@@ -126,6 +127,7 @@ body{
     display: flex;
     flex-direction: column;
     color: var(--ctaTxt);
+    padding: 2rem;
 }
 
 #sidenNavContent a {
@@ -140,7 +142,8 @@ nav ul {
 
 nav li {
     padding: 0;
-    margin: 1.5rem;
+    margin-block: 3rem;
+    margin-inline: 2rem;
     gap: 1.5rem;
 }
 
