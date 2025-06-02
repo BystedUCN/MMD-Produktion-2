@@ -27,7 +27,11 @@ body{
     margin: 0;
     color: var(--txtColour);
 }
+
+/*  */
 /* Header */
+/*  */
+
 
 /* Burger */
 /* link til animationen https: //uxdesign.cc/the-menu-210bec7ad80c */
@@ -91,6 +95,7 @@ body{
     stroke-dashoffset: -134;
     stroke-width: 6;
 }
+
 
 /* Herfra starter egenkode */
 
@@ -162,9 +167,118 @@ nav a {
     opacity: 1;
     visibility: visible; }
 
+
 /* Main */
 
-/* Footer */
-address {
-    font-style: normal;
+
+/*  */
+/* Kontakt Main */
+/*  */
+
+#kontakt-main {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem; 
+    /* 1,25rem = 20px */
 }
+
+#kontakt-h1 {
+    margin-bottom: 2rem;
+}
+
+.kontakt-h2 {
+    margin-bottom: 0;
+}
+
+.kontakt-p {
+    margin-top: 4px;
+}
+
+#kontaktImg {
+    display: block;
+    margin: 16px auto; /* 16px top/bottom and auto left/right */
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*  */
+/* Footer */
+/*  */
+
+.footerNav {
+    display: none;
+}
+
+#footer {
+    background-color: var(--darkGreen);
+    padding: 20px;
+    font-size: 14px;
+    color: var(--ctaTxt);
+}
+
+#footerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+#footerOm {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+#footerOm p,
+#footerOm address {
+    margin: 0;
+}
+
+#footerOm address {
+    text-decoration: underline;
+}
+
+#footerKontakt {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#footerKontakt a {
+    display: block;
+    text-decoration: none;
+    color: var(--ctaTxt);
+}
+
+#footerSocial {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerIcons img {
+    width: 36px;
+    height: 24px;
+    margin-bottom: 4px;
+    filter: brightness(0) invert(1);
+}
+
+.footerIcons p {
+    margin: 0;
+}
+
+@media (min-width: 1100px) {
+    .footerNav {
+        display: flex;
+    }
+}
+
