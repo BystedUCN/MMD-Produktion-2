@@ -114,8 +114,8 @@ body{
 #sideNav {
     position: fixed;
     top: 0;
-    right: -50vw;
-    width: 50vw;
+    right: -210px;
+    width: 210px;
     height: 100%;
     background: rgba(33, 80, 36, 0.95);
     z-index: 999;
