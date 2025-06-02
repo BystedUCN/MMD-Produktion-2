@@ -11,7 +11,8 @@ export function functionName () {
     const sideNav = document.getElementById('sideNav');
     const overlay = document.getElementById('overlay');
   
-    export function burger() {burgerBtn.addEventListener('click', () => {
+    export function burger() {
+      burgerBtn.addEventListener('click', () => {
       burgerBtn.classList.toggle('sideNav');
       sideNav.classList.toggle('open');
       overlay.classList.toggle('active');
@@ -20,6 +21,5 @@ export function functionName () {
         sideNav.classList.remove('open');
         overlay.classList.remove('active');
         burgerBtn.classList.remove('sideNav','opened');
-
       });
     }
