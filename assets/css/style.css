@@ -171,6 +171,106 @@ nav a {
 /* Forside */
 /*  */
 
+#forsideMain {
+    margin-left: var(--mobileLrgSpacer);
+    margin-right: var(--mobileLrgSpacer);
+    line-height: 25px;
+}
+
+.forsideImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 372px;
+    height: auto;
+}
+
+
+/*  */
+/* Hundetræning */
+/*  */
+
+#hundetræningMain {
+    margin-left: var(--mobileLrgSpacer);
+    margin-right: var(--mobileLrgSpacer);
+}
+
+/*  */
+/* Hundeterapi */
+/*  */
+
+#hundeterapiMain {
+    margin-left: var(--mobileLrgSpacer);
+    margin-right: var(--mobileLrgSpacer);
+}
+
+.hundeterapiHeaderImg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hundeterapiImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 372px;
+    height: auto;
+}
+
+.hundeterapiPris {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr; 
+  /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
+  column-gap: 1.5rem; 
+  /* højsontal gap */
+  row-gap: 1rem; 
+  /* vertical gap */
+  text-align: left;
+  max-width: 100%;
+}
+
+#miniTekst {
+    font-size: 10px;
+    max-width: 32ch;
+}
+
+
+.material-symbols-outlined.check-icon {
+    font-size: 20px;
+    color: green;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.afbalancering p {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+
+
+
+/*  */
+/* Hesteterapi */
+/*  */
+
+.hesteterapiMain {
+    margin-left: var(--mobileLrgSpacer);
+    margin-right: var(--mobileLrgSpacer);
+}
+
+.hesteterapiImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 372px;
+    height: auto;
+}
+
+
 /*  */
 /* Kontakt */
 /*  */
