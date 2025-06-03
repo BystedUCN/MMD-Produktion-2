@@ -3,7 +3,7 @@
 export function functionName () {
     console.log("Hello world")
 }
-
+ 
 // Link til slider https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
 
 // Link til mega sej burger menu https://uxdesign.cc/the-menu-210bec7ad80c

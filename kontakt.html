@@ -11,8 +11,8 @@
 
 <body>
     <header>
-        <nav>
-            <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
+       <nav>
+        <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
             <button class="menu" id="burgerMenu"
                 onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                 aria-label="Main Menu">
@@ -24,7 +24,7 @@
                         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </button>
-    
+            
             <div id="overlay"></div>
             <div id="sideNav">
                 <div id="sideNavContent">
@@ -60,7 +60,7 @@
         </section>
         <search>
             <h2 class="kontakt-h2">Åbningstider</h2>
-            <!-- Skal have et "call" med JS -->
+            <!-- Skal have et "call" med JS, for at bestemme åbningstider -->
             <div>
                 <p>Mandag</p>
                 <p>Tirsdag</p>
@@ -71,10 +71,11 @@
                 <p>Søndag</p>
             </div>
         </search>
-        <img class="kontaktImg" src="" alt="Billede af hendes hunde">
+        <img id="kontaktImg" src="" alt="Billede af hendes hunde">
     </main>
     <footer id="footer">
         <nav class="footerNav">
+            <!-- Gemt væk på mobile, men kommer frem på desktop -->
             <ul>
                 <li><a href="./index.html">Forside</a></li>
                 <li><a href="./hundetræning.html">Hundetræning</a></li>
@@ -84,6 +85,7 @@
             </ul>
         </nav>
 
+        <!-- Alt info i footer -->
         <div id="footerInfo">
             <div id="footerOm">
                 <p>LM Hunde- & Hestefokus <br> ved Lise Dam Mortensen</p>
@@ -95,6 +97,7 @@
             </div>
         </div>
 
+        <!-- Icons for hendes medier (skal laves links/cta'er på dem) -->
         <div id="footerSocial">
             <div class="footerIcons">
                 <img src="./assets/img/square-facebook-brands-solid.svg" alt="FB" />
