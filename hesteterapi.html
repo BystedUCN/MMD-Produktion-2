@@ -7,6 +7,7 @@
     <title>Hesteterapi</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script type="module" src="./assets/js/hesteterapi.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check" />
 </head>
 
 <body>
@@ -39,53 +40,76 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="hesteterapiMain">
         <section>
             <div>
                 <h1>Hesteterapi</h1>
                 <p>Fysiurgisk hesteterapi kan reducere smerte, øge helingsprocessen, styrke hestens generelle velbefindende, og generelt forbedre hestens fysiske og mentale velvære.</p>
-                <img src="" alt="Billede af hendes hun på massagebordet">
+                <img class="hesteterapiImg" src="./assets/img/KranioSakralTerapiHestKST.jpg" alt="Billede af hendes hest">
             </div>
             <div>
                 <h3>Hvordan foregår fysiurgisk hesteterapi?</h3>
-
+                <p>Fysiurgisk hesteterapi tager udgangspunkt i den enkelte hest, og da ingen heste er ens, bliver hver behandling tilpasset efter hestens behov.</p>
+                <p>Jeg tager udgangspunkt i hestens anatomi og biomekanik. Jeg starter konsultationen med at lokalisere spændinger og restriktioner ud fra ganganalyse, muskelanalyse og en undersøgelse af hestens krop.</p>
+                <p>Dialogen med dig som hesteejer spiller en vigtig rolle i afbalanceringen, da dine observationer af hesten og hestens daglige rutiner, kan give en værdifuld indsigt i, hvordan din hest trives og bevæger sig i hverdagen.</p>
             </div>
         </section>
         <section>
             <div>
-
+                <h3>Teknikker</h3>
+                <p>Teknikkerne jeg bruger, er med til at afspænde muskler, forbedre blodcirkulationen og øge mobiliteten hos vores firbenede venner.</p>
             </div>
 
             <!-- Sliders med hendes teknikker her -->
 
         </section>
         <section>
-            <div>
-                <h3>Priser</h3>
-                <p>
-                    <span class="info">Første konsultation</span>
-                    <span class="info">90 min</span>
-                    <span class="info">600 kr</span>
-                </p>
-                <p>
-                    <span class="info">Anden konsultation </span>
-                    <span class="info">60 min</span>
-                    <span class="info">500 kr</span>
-                </p>
-                <p>
-                    <span class="info">Laserterapi*</span>
-                    <span class="info">30 min</span>
-                    <span class="info">200 kr</span>
-                </p>
-                <p>*Denne behandling kan bookes hvis man har været til første konsultation</p> <!-- den her skal være minitekst-->
-            </div>
-            <div>
+            <h3>Priser</h3>
+            <div class="hundeterapiPris">
+                <span>Første konsultation</span>
+                <span>90 min</span>
+                <span>600 kr</span>
 
+                <span>Anden konsultation </span>
+                <span>60 min</span>
+                <span>500 kr</span>
+
+                <span>Laserterapi*</span>
+                <span>30 min</span>
+                <span>200 kr</span>
+            </div>
+            <p id="miniTekst">*Denne behandling kan bookes hvis man har været til første konsultation</p> 
+            <div>
+                <h3></h3>
+                <p></p>
             </div>
         </section>
         <section>
+            <div class="afbalancering">
+                <h3>Jeg laver afbalancering på heste:</h3>
+                <p><span class="material-symbols-outlined check-icon">check</span>Indskrænket bevægelse</p>
+                <p><span class="material-symbols-outlined check-icon">check</span>Muskelspændinger</p>
+                <p><span class="material-symbols-outlined check-icon">check</span>Stivhed</p>
+                <p><span class="material-symbols-outlined check-icon">check</span>Manglende evne til at udføre en bestemt øvelse</p>
+                <p><span class="material-symbols-outlined check-icon">check</span>Genoptræning efter skade</p>
+                <p><span class="material-symbols-outlined check-icon">check</span>Adfærdsændringer/problemer</p>
+            </div>
             <div>
-
+                <p>Eller blot som vedligeholdelse af hestens krop, unge som gamle heste samt ved henvisning fra dyrlægen.</p>
+            </div>
+            <div class="afbalancering">
+                <h3>Jeg laver ikke afbalancering på heste:</h3>
+                <p><span class="">X</span>Med feber og infektioner</p>
+                <p><span class="">X</span>Ved akut inflammation</p>
+                <p><span class="">X</span>Ved direkte på hævelser eller fibersprængninger</p>
+                <p><span class="">X</span>Hvis der er mindre end 48 timer til deltagelse i udstilling, konkurrence eller anden præstation.</p>
+                <p><span class="">X</span>Lokalt på hudproblemer</p>
+                <p><span class="">X</span>Ved cancer eller ikke-diagnosticerede knuder</p>
+                <p><span class="">X</span>Ved drægtighed</p>
+            </div>
+            <div>
+                <p>Der vil i ovenstående være tilfælde hvor en fysiurgisk hesteterapeut kan hjælpe efter at en dyrlæge har tilset hesten. Dette vil være et samarbejde mellem dyrlægen og hesteterapeuten.</p>
+                <p>Lad LM Hunde- og Hestefokus hjælpe din hest med at opnå optimal sundhed og livskvalitet gennem fysiurgisk hesteterapi!</p>
             </div>
         </section>
         <section>
@@ -98,7 +122,7 @@
             <div>
                 <h2>Din hund fortjener velvære og fri bevægelse</h2>
                 <p>Med fysiurgisk terapi hjælper jeg din hest til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hests krop før problemerne opstår.</p>
-                <button id="forsideCta"><a href="./hundeterapi.html">Opdag fordelene ved Hundeterapi</a></button>
+                <button><a href="./hundeterapi.html">Opdag fordelene ved Hundeterapi</a></button>
             </div>
         </section>
     </main>
