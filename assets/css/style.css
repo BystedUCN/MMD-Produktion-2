@@ -375,9 +375,57 @@ nav a {
     margin: 0;
 }
 
+/*  */
+/* footer Media */
+/*  */
+
 @media (min-width: 1100px) {
     .footerNav {
         display: flex;
     }
 }
+
+/*  */
+/* forside Media */
+/*  */
+
+@media (min-width: 1100px) {
+    #skjulEl {
+        display: none;
+}
+}
+
+.forsideTop {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* DESKTOP: 2-column layout */
+@media (min-width: 1100px) {
+  .Sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .Sections #venstre {
+    grid-column: 1;
+  }
+
+  .Sections #højre {
+    grid-column: 2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
