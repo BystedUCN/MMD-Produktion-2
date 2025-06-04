@@ -1,2 +1,3 @@
-import {burger} from "./app.js"
+import {burger, slider} from "./app.js"
 burger()
+slider()
