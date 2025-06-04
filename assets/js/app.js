@@ -117,3 +117,20 @@ rightArrow.addEventListener('click', () => {
 // Starttilstand – vis eller skjul pile afhængigt af første slide
 updateArrowVisibility(currentIndex);
 }
+
+// Fetch 
+export function fetchData() {
+    fetch('https://api.mby-ucn.dk/')
+    console.log('fetch:', fetch)
+        return res.json
+    .then(res => res.json())
+    console.log('res:', res)
+    .then(data => {
+        console.log('data:', data)
+
+    })
+
+    .catch(err => {
+        console.log('Fejl i afhentning af data', err)
+    })
+}
