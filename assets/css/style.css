@@ -185,6 +185,19 @@ nav a {
     height: auto;
 }
 
+/* Anmeldelser */
+
+#anmeldelse {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* slightly darker shadow for smaller screens */
+  padding: 16px;
+  background-color: #fff;
+  margin: 16px;
+  font-size: 1rem; /* readable on mobile */
+  line-height: 1.5;
+}
+
 
 /*  */
 /* Hundetræning */
