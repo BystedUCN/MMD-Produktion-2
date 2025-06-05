@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-       <nav>
+        <source src="./assets/img/MassageHundLMHundeOgHestefokus.mov" type="video/mp4">
+        <nav>
         <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
             <button class="menu" id="burgerMenu"
                 onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
@@ -44,8 +45,8 @@
                 <p id="venstre">Velkommen til til LM Hunde- & Hestefokus! Hvis du er hunde- og/eller hesteejer, og vil du din firbenede ven det bedste, så er du kommet til det rette sted. </p>
                 <p id="venstre">Mit navn er Lise og jeg tilbyder fysiurgisk terapi til både hund og hest, så vi i fællesskab kan sikre, at dit kæledyr får de bedste forudsætninger for at undgå skader. Skulle skaden være sket, kan jeg også hjælpe dem gennem genoptræning.</p>
             </div>
-            <div>
-                <img loading="lazy" id="højre" class="forsideImg" src="./assets/img/LMhundeOghestefokusLiseMedHundeOgHest.jpg" alt="Billede af lise med hendes dyr">
+            <div id="forsideImgTop">
+                <img loading="lazy" id="højre" class="forsideImg" src="./assets/img/mobil billeder/LMhundeOghestefokusLiseMedHundeOgHest600.jpg" alt="Billede af lise med hendes dyr">
             </div>
             <div>
                 <p id="venstre">Jeg tilbyder også træning til hunde i alle aldre, størrelser og erfaringsniveauer, så er du på udkig efter spændende og sjov aktiviteter i kan lave sammen, kunne et af mine træningstilbud være noget for jer!</p>
@@ -57,20 +58,32 @@
                 <div class="carouselTrack">
                     <div class="slide">
                         <div class="sliderContent">
-                            <h3>Jeg er en header</h3>
-                            <p class="sliderTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur assumenda
-                                fuga eius, asperiores minima blanditiis distinctio quod harum voluptas maiores iusto nesciunt
-                                dolores voluptate ex ipsa voluptates quam modi quasi accusamus eos incidunt doloribus sequi
-                                facere! Pariatur vel illo neque iste quo, consequatur, amet laudantium dolor ratione eveniet at
-                                atque animi nisi nam quod, blanditiis doloribus optio accusantium ullam. </p>
-                            <button class="cta">Klik på mig</button>
+                            <h3>Din hund fortjener velvære og fri bevægelse</h3>
+                            <p class="sliderTxt">Med fysiurgisk terapi hjælper jeg din hund til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hunds krop før problemerne opstår.Opdag fordelene ved hundeterapi</p>
+                            <button class="cta"><a href="./hundeterapi.html">Opdag fordelene ved hundeterapi</a></button>
                         </div>
-                        <img loading="lazy" class="sliderImg" src="" alt="">
+                        <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/MassageHund600.jpg" alt="Hunde Massage">
                     </div>
         
-                    <div class="slide">Slide 2</div>
-                    <div class="slide">Slide 3</div>
-                    <div class="slide">Slide 4</div>
+                    <div class="slide">
+                        <div class="sliderContent">
+                            <h3>Din hest fortjener velvære og fri bevægelse</h3>
+                            <p>Med fysiurgisk terapi hjælper jeg din hest til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hests krop før problemerne opstår.</p>
+                            <button class="cta"><a href="./hesteterapi.html">Opdag fordelene ved hesteterapi </a></button>
+                        </div>
+                        <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/MassageHestMassoer600.jpg" alt="Heste Massage">
+                    </div>
+                    <div class="slide">
+                        <div class="sliderContent">
+                            <h3>Hundetræning</h3>
+                            <p>Skal din firbenede ven mentalt stimuleres, eller vil du  gerne lære nye ting sammen med din hund?</p>
+                            <button class="cta"><a href="./hundetræning.html">Opdag fordelene ved hundetræning</a></button>
+                        </div>
+                        <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/LMHundeOgHestefokusLiseMedHunde600.jpg" alt="Hundetræning">
+                    </div>
+                    <div class="slide">Slide 4
+
+                    </div>
                 </div>
                 <button class="arrow arrowRight" aria-label="Next slide">&#8250;</button>
             </article>
@@ -82,9 +95,8 @@
                 <h2 id="skjulEl">Mine kvalifikationer</h2>
                 <p id="skjulEl">Mit navn er Lise, og jeg tilbyder hundetræning samt fysiurgisk terapi til hunde og heste, med fokus på rehabilitering, bevægelighed og velvære.</p>
             </div>
-            <div>
+            <div id="forsideImgBottom">
                 <img loading="lazy" id="højre" src="" alt="Billede af alle hendes certifikater">
-                <!-- Billedet skal lige fikses -->
             </div>
             <div>
                 <p id="venstre">Jeg er dyrlægeeksamineret fysiurgisk hundeterapeut og certificeret fysiurgisk hesteterapeut, uddannet ved Center for Dyreterapi. Uddannelserne er internationalt godkendt af IICT samt IEBWA/IEBWAs smådyrssektion, hvilket sikrer at dit kæledyr bliver afbalanceret på et højt fagligt niveau! Jeg har taget efteruddannelsen til Kranio Sakral Terapeut både til hund og hest.</p>
@@ -93,7 +105,7 @@
 
                 <p id="venstre">Gennem min erfaring fra hundetræning blev jeg motiveret til, at tage dyreadfærdskonsulent med speciale i hundeadfærd uddannelsen, som jeg lige nu er igang med. Dette har motiveret mig til at tilbyde hundetræning gennem min egen virksomhed.</p>
 
-                <button id="venstre"><a href="./kontakt.html">Find eller kontakt mig</a></button>
+                <button class="cta" id="venstre"><a href="./kontakt.html">Find eller kontakt mig</a></button>
             </div>
         </section>
         <section class="Sections">

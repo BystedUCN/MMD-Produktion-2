@@ -167,6 +167,19 @@ nav a {
 
 /* Main */
 
+main {
+    line-height: 25px;
+}
+
+/* Hero Billeder */
+
+#HeroImg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /*  */
 /* Forside */
 /*  */
@@ -177,25 +190,56 @@ nav a {
     line-height: 25px;
 }
 
-.forsideImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 372px;
-    height: auto;
+
+/* forside - Billeder */
+
+
+
+#forsideImgTop {
+    width: 100%;
+    height: 212px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#forsideImgTop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#forsideImgBottom {
+    width: 100%;
+    height: 294px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#forsideImgBottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Anmeldelser */
 
 #anmeldelse {
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* slightly darker shadow for smaller screens */
-  padding: 16px;
-  background-color: #fff;
-  margin: 16px;
-  font-size: 1rem; /* readable on mobile */
-  line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 160px; /* Ændre højden på cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -206,6 +250,24 @@ nav a {
 #hundetræningMain {
     margin-left: var(--mobileLrgSpacer);
     margin-right: var(--mobileLrgSpacer);
+    line-height: 25px;
+}
+
+/* Card billeder */
+
+#træningCardImg {
+    width: 100%;
+    height: 212px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#træningCardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*  */
@@ -225,11 +287,13 @@ nav a {
 
 .hundeterapiImg {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 1rem;
     margin-bottom: 1rem;
     max-width: 372px;
     height: auto;
+    border-radius: 6px;
 }
 
 .hundeterapiPris {
@@ -277,8 +341,9 @@ nav a {
 
 .hesteterapiImg {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     max-width: 372px;
     height: auto;
 }
@@ -376,6 +441,7 @@ p {
 .sliderContent {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 1rem;
     max-width: 600px;
 }
@@ -450,10 +516,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .cta:hover {
     transform: scale(1.1);
+}
+
+.cta a {
+    color: white;
+    text-decoration: none;
 }
 
 /*  */
@@ -548,12 +621,28 @@ p {
         display: none;
     }
 
+    /* Billederne på forsiden */
 
-    .forsideTop {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
+    .forsideImgTop {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .forsideImgBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    /* Anmeldelser på forside */
+
+    #anmeldelse {
+        max-width: 600px;
+        margin: 24px auto;
+        font-size: 1.1rem;
     }
 
     /*  */
