@@ -118,19 +118,20 @@ rightArrow.addEventListener('click', () => {
 updateArrowVisibility(currentIndex);
 }
 
-// Fetch 
 export function fetchData() {
-    fetch('https://api.mby-ucn.dk/')
-    console.log('fetch:', fetch)
-        return res.json
-    .then(res => res.json())
-    console.log('res:', res)
-    .then(data => {
-        console.log('data:', data)
-
-    })
-
-    .catch(err => {
-        console.log('Fejl i afhentning af data', err)
-    })
+    fetch('https://api.mby-ucn.dk/wp-json/wp/v2/posts?acf_format=standard&_embed')// `fetch()` sender en HTTP GET-request til WordPress REST API’et for at hente data (i dette tilfælde blogindlæg med ACF og embedded data).
+        .then(res => {
+            console.log('status:', res.status);// Logger HTTP-statuskoden for at hjælpe med fejlfinding (f.eks. 200, 404, 500).
+            if (!res.ok) {// `res.ok` er `false`, hvis statuskoden ikke er mellem 200 og 299. Dette tjek sikrer, at kun succesfulde svar behandles.
+                throw new Error(`HTTP-fejl! status: ${res.status}`); // Kaster en fejl, som sendes videre til `.catch()`, hvis statuskoden er problematisk.
+            }
+            console.log('res:', res);
+            return res.json();
+        })
+        .then(data => {
+            console.log('data:', data);
+        })
+        .catch(err => {
+            console.log('Fejl i afhentning af data', err);
+        });
 }
