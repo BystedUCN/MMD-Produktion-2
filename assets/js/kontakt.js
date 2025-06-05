@@ -1,2 +1,3 @@
-import {burger} from "./app.js";
-burger(); 
+import {burger, slider, fetchData} from "./app.js";
+burger();
+fetchData()

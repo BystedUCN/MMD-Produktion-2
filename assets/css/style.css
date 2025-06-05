@@ -53,8 +53,8 @@ body{
 
 .line {
     fill: none;
-    stroke: black;
-    stroke-width: 6;
+    stroke: var(--mainGreen);
+    stroke-width: 8;
     stroke-linecap: round;
     transition:
         stroke 0.15s ease-in-out,
@@ -64,35 +64,35 @@ body{
 
 .line1 {
     stroke-dasharray: 60 207;
-    stroke-width: 6;
+    stroke-width: 8;
 }
 
 .line2 {
     stroke-dasharray: 60 60;
-    stroke-width: 6;
+    stroke-width: 8;
 }
 
 .line3 {
     stroke-dasharray: 60 207;
-    stroke-width: 6;
+    stroke-width: 8;
 }
 
 .opened .line1 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
-    stroke-width: 6;
+    stroke-width: 8;
 }
 
 .opened .line2 {
     stroke-dasharray: 1 60;
     stroke-dashoffset: -30;
-    stroke-width: 6;
+    stroke-width: 8;
 }
 
 .opened .line3 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
-    stroke-width: 6;
+    stroke-width: 8;
 }
 
 
