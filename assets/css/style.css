@@ -703,7 +703,53 @@ p {
 }
 
 /* Isa */
+@media (min-width: 1100px) {
+    .footerNav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
+    .footerNav ul {
+        display: flex;
+    }
+}
+
+.footerIconsKontakt img{
+    display: flex;
+}
+
+#footerInfo {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+
+#footerSocial {
+    text-align: center;
+}
+
+#footerSocial p {
+    font-size: 14px;
+}
+
+#footerOm a {
+    color: white;
+}
+
+#footerKontaktHøjre a{
+    color: white;
+}
+
+#footerOm p{
+    font-size: 14px;
+}
+
+#footerKontaktInfo {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
