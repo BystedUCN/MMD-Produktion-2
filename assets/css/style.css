@@ -97,7 +97,7 @@ body{
 }
 
 
-/* Herfra starter egenkode */
+/* Herfra starter koden */
 
 #overlay {
     position: fixed;
@@ -402,7 +402,7 @@ p {
 
 .carousel {
     position: relative;
-    padding: 10px;
+    /* padding: 10px; */
     overflow: hidden;
 }
 
@@ -420,7 +420,7 @@ p {
     scroll-snap-align: start;
     background: white;
     border-radius: 6px;
-    padding: 2rem;
+    padding: var(--mobileSmlSpacer);
     border: 2px solid rgba(0, 0, 0, 0.1);
     margin-right: 10px;
     display: grid;
