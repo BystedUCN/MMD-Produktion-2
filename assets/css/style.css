@@ -521,7 +521,7 @@ p {
 }
 
 .cta:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .cta a {
@@ -1298,10 +1298,71 @@ p {
 
 
 /* Martin */
+@media (min-width: 1100px) {
+    .dogSlider .carouselTrack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        overflow: visible;
+        scroll-snap-type: none;
+        margin: 2rem;
+    }
 
+    .dogSlider .slide {
+        flex: none;
+        scroll-snap-align: unset;
+        margin-right: 0;
+    }
 
+    .dogSlider .arrow, .dogSlider .dots {
+        display: none !important;
+    }
 
+    .slide {
+        display: block;
+        transition: 300ms ease;
+    }
 
+    .slide:nth-of-type(1) {
+        margin-right: var(--smlSpacer);
+    }
+
+    .slide:nth-of-type(2) {
+        margin-inline: var(--smlSpacer);
+    }
+
+    .slide:nth-of-type(3) {
+        margin-left: var(--smlSpacer);
+    }
+
+    .slide:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+   
+   .ctaSection {
+    display: flex;
+    margin-inline: var(--secSpacer);
+   }
+   .rightSide {
+    width: 50%;
+    margin-left: var(--smlSpacer);
+   }
+   .leftSide {
+    width: 50%;
+    margin-right: var(--smlSpacer);
+   }
+   
+   .leftSide p {
+    padding-bottom: var(--smlSpacer);
+   }
+
+   .ctaSection button {
+    margin: 0 auto;
+    margin-block: var(--medSacer);
+   }
+
+}
 
 
 
