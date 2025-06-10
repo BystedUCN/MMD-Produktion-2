@@ -608,6 +608,10 @@ p {
 /*  */
 
 @media (min-width: 1100px) {
+      
+    /*  */
+    /* footer Meida */
+    /*  */
     .footerNav {
         display: flex;
     }
@@ -1099,8 +1103,59 @@ p {
 
 /* kasper */
 
+/* Desktop styling */
+@media (min-width: 1100px) {
+
+    /* Fjerner elementer ment for mobile */
+    header nav svg {
+        display: none;
+    }
+
+    /* Hero billedet */
+    #heroImg {
+        display: none;
+    }
+
+    #heroImgHest {
+        background-image: url('../img/desktop billeder/MassageHestMassoerDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 582px;
+        width: 100%;
+    }
+
+    /*  */
+    /* Header Navigation Media */
+    /*  */
+
+    /* Styling af navigation */
 
 
+    #sideNav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #sideNavContent ul {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #sideNavContent ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+}
 
 
 
