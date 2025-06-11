@@ -561,6 +561,8 @@ p {
 /* Footer */
 /*  */
 
+
+
 .footerNav {
     display: none;
 }
@@ -578,9 +580,10 @@ p {
     align-items: center;
     padding: 1rem;
     text-align: center;
+    flex: 1;
 }
 
-#footerOm {
+.footerOm {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -588,27 +591,19 @@ p {
     margin-bottom: 1rem;
 }
 
-#footerOm p,
-#footerOm address {
-    margin: 0;
-}
-
-#footerOm address {
-    text-decoration: underline;
-}
-
-#footerKontakt {
+#footerKontaktInfo {
     text-align: center;
     text-decoration: underline;
 }
 
-#footerKontakt a {
+#footerKontaktInfo a {
     display: block;
     text-decoration: none;
     color: var(--ctaTxt);
 }
 
-#footerSocial {
+.footerSocial {
+    margin-top: var(--mobileSmlSpacer);
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -627,9 +622,14 @@ p {
     filter: brightness(0) invert(1);
 }
 
-.footerIcons p {
-    margin: 0;
-}
+/* Navn - Adresse */
+    /* e-mail */
+    /* tlf */
+/* Sociale iconer */
+
+
+
+
 
 /*  */
 /* Media */
@@ -1436,7 +1436,7 @@ p {
         margin-bottom: .5rem;
     }
 
-    #hesteterapiSpacing {
+    #terapiSpacing {
         margin-bottom: 1.5rem;
     }
 
