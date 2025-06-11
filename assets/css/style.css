@@ -1697,7 +1697,12 @@ p {
 
 
 /* Martin */
-
+@media (min-width: 1100px) {
+    .navActive {
+        font-weight: bold;
+        color: var(--mainGreen);
+    }
+}
 
 
 
