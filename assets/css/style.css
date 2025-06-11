@@ -254,6 +254,15 @@ main {
     line-height: 25px;
 }
 
+#hundeFitnessFigure{
+    margin: 0;
+}
+
+.mobilBillede {
+    width: 100%;
+    padding: 0;
+}
+
 /* Card billeder */
 
 #træningCardImg {
@@ -261,7 +270,6 @@ main {
     height: 212px;
     overflow: hidden;
     border-radius: 6px;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -644,7 +652,9 @@ p {
     h1 {
         font-size: 2.5rem;
     }
-
+    p {
+        font-size: 1.5rem;
+    }
       
     /*  */
     /* footer Meida */
@@ -690,19 +700,19 @@ p {
     /* DESKTOP: 2-column layout */
     /*  */
 
- {
+    /* .sections{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
     
- #venstre {
+    #venstre {
         grid-column: 1;
     }
 
- #højre {
+    #højre {
         grid-column: 2;
-    }
+    } */
 
     /*  */
     /* Slider desktop */    
@@ -889,6 +899,38 @@ p {
             display: flex;
             justify-content: space-around;
         }
+                .footerOm .material-icons {
+                    width: 24px;
+                    font-size: 30px;
+                }
+        
+                .footerOm svg {
+                    width: 28.5px;
+                    height: 30px;
+                    fill: var(--ctaTxt);
+                }
+        
+                .footerKontaktHøjre .fa-location-dot,
+                .footerKontaktHøjre .material-icons {
+                    font-size: 30px;
+                    width: 24px;
+        
+                }
+        
+                .footerIcons {
+                    font-size: 30px;
+        
+                }
+        
+                .footerOm,
+                .footerKontaktHøjre {
+                    display: flex;
+                    flex-direction: column;
+                }
+        
+                .iconAppend {
+                    display: flex;
+                }
 }
 
 /* Isa */
@@ -1087,34 +1129,6 @@ p {
 
 
 /* Imilia */
-.footerOm .material-icons {
-  width: 24px;  
-    font-size: 30px;
-}
-.footerOm svg{
-    width: 28.5px;
-    height: 30px;
-    fill: var(--ctaTxt);
-}
-
-.footerKontaktHøjre .fa-location-dot, .footerKontaktHøjre .material-icons{
-    font-size: 30px;
-    width: 24px;
-
-}
-.footerIcons {
-    font-size: 30px;
-
-}
-
-.footerOm, .footerKontaktHøjre {
-    display: flex;
-    flex-direction: column;
-}
-
-.iconAppend {
-    display: flex;
-}
 
 
 
@@ -1284,7 +1298,7 @@ p {
 
 /* kasper */
 
-.footerNav {
+/* .footerNav {
     display: none;
 }
 
@@ -1341,7 +1355,7 @@ p {
     height: 24px;
     margin-bottom: 4px;
     filter: brightness(0) invert(1);
-}
+} */
 
 
 /*  */
@@ -1349,38 +1363,16 @@ p {
 
 /* idk hvad jeg skal kalde denne endnu */
 
-.terapiColumnØverst {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-/* flytter den tredje div til at være den anden div, for at få billedet til at være rigtigt på mobil. */
-.terapiColumnØverst>div:nth-child(3) {
-    order: 2;
-}
-
-.terapiColumnØverst>div:nth-child(2) {
-    order: 3;
-}
-
-.terapiColumnØverst>div:nth-child(1) {
-    order: 1;
-}
-
-
 #terapiMain {
     margin-left: var(--mobileLrgSpacer);
     margin-right: var(--mobileLrgSpacer);
 }
 
+#terapiHestFigure {
+    margin: 0;
+}
 .terapiHestImg {
-    display: block;
-    border-radius: 6px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 372px;
-    height: auto;
+    width: 100%;
 }
 
 .terapiHundImg {
@@ -1393,10 +1385,11 @@ p {
 }
 
 #heroImgHestMobile {
-    background-image: url('../img/mobil billeder/MassageHestMassoer1100.jpg');
+    background-image: url('../img/mobilBilleder/MassageHestMassoer1100.jpg');
     background-size: cover;
     background-position: center;
-    height: 275px;
+    background-repeat: no-repeat;
+    height: 30vh;
     width: 100%;
 }
 
@@ -1408,7 +1401,6 @@ p {
         display: none;
     }
 
-    
     
     /*  */
     /* Header Navigation Media */
@@ -1457,7 +1449,7 @@ p {
     }
     
     #heroImgHest {
-        background-image: url('../img/desktop billeder/MassageHestMassoerDesktop.jpg');
+        background-image: url('../img/desktopBilleder/MassageHestMassoerDesktop.jpg');
         background-size: cover;
         background-position: center;
         height: 70vh;
@@ -1467,7 +1459,7 @@ p {
     .terapiHestImg {
         background-image: url('../img/desktop billeder/MassageHestDesktop.jpg');
         background-size: cover;
-        width: 100vw;
+        width: 40vw;
         border-radius: 6px;
         margin-top: 8vw;
     }
@@ -1504,21 +1496,11 @@ p {
     }
 
     #terapiMain p {
-        font-size: 1.1rem;
-        max-width: 65ch;
-        line-height: 1.8rem;
+        max-width: 85ch;
     }
 
-    #terapiMain h1 {
-        font-size: 2rem;
-    }
-
-    #terapiMain h2 {
-        font-size: 1.7rem;
-    }
-
-    #terapiMain h3 {
-        font-size: 1.4rem;
+    .terapiStart {
+        display: flex;
     }
 
     #terapiListTekst {
@@ -1544,15 +1526,15 @@ p {
     #terapiBookTid button.cta {
         width: 415px;
         max-height: 75px;
-    }
+    } */
 
 
     #terapiPrisSection {
-        grid-template-columns: 2.5fr 1fr 1fr; 
+        grid-template-columns: 2.5fr 1fr 1fr;  
         /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
         column-gap: 1.5rem;
         row-gap: 2rem;
-        max-width: 100%;
+        max-width: 100%; 
     }
 
     /* spacing i eller mellem sectioner */
@@ -1605,14 +1587,6 @@ p {
     /* Grid columns */
     /*  */
     
-    .hesteColumnØverst {
-        display: flex;
-    }
-
-    #terapiIntroTekst {
-        max-width: 50ch;
-    }
-
     /* Hvad hun vil/ikke vil gøre for heste sektion */
 
     .terapiLister {
@@ -1626,103 +1600,6 @@ p {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
