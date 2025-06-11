@@ -145,12 +145,12 @@ export function fetchData() {
 };
 
 export function navActive() {
-    document.addEventListener('DOMContentLoaded', () => { // venter på at alt er loaded
-        const currentPath = window.location.pathname; //erklærer konstanten 
-        
-        document.querySelectorAll('.nav-link').forEach(link => {
-          if (link.getAttribute('href') === currentPath) {
-            link.classList.add('navActive');
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentUrl = window.location.href;
+      
+        document.querySelectorAll('.navLink a').forEach(link => {
+          if (currentUrl.includes(link.href)) {
+            link.parentElement.classList.add('navActive');
           }
         });
       });
