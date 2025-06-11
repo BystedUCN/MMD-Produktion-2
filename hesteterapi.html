@@ -45,19 +45,22 @@
     </header>
     <main id="terapiMain">
         <section class="terapiColumnØverst">
-            <div id="hestIntroTekst">
-                <h1>Hesteterapi</h1>
-                <p>Fysiurgisk hesteterapi kan reducere smerte, øge helingsprocessen, styrke hestens generelle velbefindende, og generelt forbedre hestens fysiske og mentale velvære.</p>
-            </div>
-            <div id="hestIntroTekst">
-                <h3>Hvordan foregår fysiurgisk hesteterapi?</h3>
-                <p>Fysiurgisk hesteterapi tager udgangspunkt i den enkelte hest, og da ingen heste er ens, bliver hver behandling tilpasset efter hestens behov.</p>
-                <p>Jeg tager udgangspunkt i hestens anatomi og biomekanik. Jeg starter konsultationen med at lokalisere spændinger og restriktioner ud fra ganganalyse, muskelanalyse og en undersøgelse af hestens krop.</p>
-                <p>Dialogen med dig som hesteejer spiller en vigtig rolle i afbalanceringen, da dine observationer af hesten og hestens daglige rutiner, kan give en værdifuld indsigt i, hvordan din hest trives og bevæger sig i hverdagen.</p>
-            </div>
-            <div id="hestImgDesktop" >
-                <img loading="lazy" class="hesteterapiImg" src="./assets/img/mobil billeder/MassageHest600.jpg" alt="Billede af hendes hest">
-            </div> 
+            <article id="terapiIntroTekst">
+                <div id="terapiSpacing">
+                    <h1>Hesteterapi</h1>
+                    <p>Fysiurgisk hesteterapi kan reducere smerte, øge helingsprocessen, styrke hestens generelle velbefindende, og generelt forbedre hestens fysiske og mentale velvære.</p>
+                </div>
+                <div>
+                    <h3>Hvordan foregår fysiurgisk hesteterapi?</h3>
+                    <p>Fysiurgisk hesteterapi tager udgangspunkt i den enkelte hest, og da ingen heste er ens, bliver hver behandling tilpasset efter hestens behov.</p>
+                    <p>Jeg tager udgangspunkt i hestens anatomi og biomekanik. Jeg starter konsultationen med at lokalisere spændinger og restriktioner ud fra ganganalyse, muskelanalyse og en undersøgelse af hestens krop.</p>
+                    <p>Dialogen med dig som hesteejer spiller en vigtig rolle i afbalanceringen, da dine observationer af hesten og hestens daglige rutiner, kan give en værdifuld indsigt i, hvordan din hest trives og bevæger sig i hverdagen.</p>
+                </div>
+            </article>
+            <!-- Denne div skal have en anden class, på hundeterapi siden -->
+                <div class="terapiHestImg">
+                    <!-- <img loading="lazy" src="./assets/img/mobil billeder/MassageHest600.jpg" alt="Billede af hendes hest"> -->
+                </div>
         </section>
         <section>
             <div id="hesteTeknik">
@@ -130,42 +133,49 @@
                 <span>30 min</span>
                 <span>200 kr</span>
             </div>
-            <div>
+            <div id="terapiBookTid">
                 <p id="terapiMiniTekst">*Denne behandling kan bookes hvis man har været til første konsultation</p> 
+                <button class="cta"><a href="./hundeterapi.html">Book tid her</a></button>
             </div>
         </section>
-        <section>
-            <div id="terapiSpacing">
-                <h3>Hvilke hunde har gavn af fysiurgisk hundeterapi?</h3>
-                <p>Ligesom os kan vores firbenede venner også have spændinger eller restriktioner i kroppen, og dette kan fysiurgisk hundeterapi afhjælpe.</p>
-            </div>
-            <div class="afbalancering">
-                <h3>Jeg laver afbalancering på heste:</h3>
-                <p><span class="material-symbols-outlined check-icon">check</span>Indskrænket bevægelse</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Muskelspændinger</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Stivhed</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Manglende evne til at udføre en bestemt øvelse</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Genoptræning efter skade</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Adfærdsændringer/problemer</p>
-            </div>
-            <div class="afbalancering" id="terapiSpacing">
-                <p>Eller blot som vedligeholdelse af hestens krop, unge som gamle heste samt ved henvisning fra dyrlægen.</p>
-            </div>
-            <div class="afbalancering">
-                <h3>Jeg laver ikke afbalancering på heste:</h3>
-                <p><span class="">X</span>Med feber og infektioner</p>
-                <p><span class="">X</span>Ved akut inflammation</p>
-                <p><span class="">X</span>Ved direkte på hævelser eller fibersprængninger</p>
-                <p><span class="">X</span>Hvis der er mindre end 48 timer til deltagelse i udstilling, konkurrence eller anden præstation.</p>
-                <p><span class="">X</span>Lokalt på hudproblemer</p>
-                <p><span class="">X</span>Ved cancer eller ikke-diagnosticerede knuder</p>
-                <p><span class="">X</span>Ved drægtighed</p>
-            </div>
-            <div class="afbalancering">
-                <p>Der vil i ovenstående være tilfælde hvor en fysiurgisk hesteterapeut kan hjælpe efter at en dyrlæge har tilset hesten. Dette vil være et samarbejde mellem dyrlægen og hesteterapeuten.</p>
-                <p>Lad LM Hunde- og Hestefokus hjælpe din hest med at opnå optimal sundhed og livskvalitet gennem fysiurgisk hesteterapi!</p>
-            </div>
+        <div id="terapiListTekst">
+            <h3>Hvilke heste har gavn af fysiurgisk hesteterapi?</h3>
+            <p>Ligesom os kan vores firbenede venner også have spændinger eller restrik-tioner i kroppen, og dette kan fysiurgisk hesteterapi afhjælpe.</p>
+        </div>
+        <section class="terapiLister">
+            <article class="terapiList">
+                <div class="afbalancering">
+                    <h3>Jeg laver afbalancering på heste:</h3>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Indskrænket bevægelse</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Muskelspændinger</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Stivhed</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Manglende evne til at udføre en bestemt øvelse</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Genoptræning efter skade</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Adfærdsændringer/problemer</p>
+                </div>
+                <div class="afbalancering" id="terapiSpacing">
+                    <p>Eller blot som vedligeholdelse af hestens krop, unge som gamle heste samt ved henvisning fra dyrlægen.</p>
+                </div>
+            </article>
+            <article class="terapiList">
+                <div class="afbalancering">
+                    <h3>Jeg laver ikke afbalancering på heste:</h3>
+                    <p><span class="">X</span>Med feber og infektioner</p>
+                    <p><span class="">X</span>Ved akut inflammation</p>
+                    <p><span class="">X</span>Ved direkte på hævelser eller fibersprængninger</p>
+                    <p><span class="">X</span>Hvis der er mindre end 48 timer til deltagelse i udstilling, konkurrence eller anden præstation.</p>
+                    <p><span class="">X</span>Lokalt på hudproblemer</p>
+                    <p><span class="">X</span>Ved cancer eller ikke-diagnosticerede knuder</p>
+                    <p><span class="">X</span>Ved drægtighed</p>
+                </div>
+                <div class="afbalancer">
+                    <p>Der vil i ovenstående være tilfælde hvor en fysiurgisk hesteterapeut kan hjælpe efter at en dyrlæge har tilset hesten. Dette vil være et samarbejde mellem dyrlægen og hesteterapeuten.</p>
+                </div>
+            </article>
         </section>
+        <div id="terapiListTekst">
+            <p>Lad LM Hunde- og Hestefokus hjælpe din hest med at opnå optimal sundhed og livskvalitet gennem fysiurgisk hesteterapi!</p>
+        </div>
         <section class="ctaSection">
             <article class="leftSide">
                 <h2>Kontakt mig i dag</h2>
