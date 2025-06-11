@@ -297,7 +297,7 @@ main {
     border-radius: 6px;
 }
 
-.hundeterapiPris {
+.terapiPris {
     display: grid;
     grid-template-columns: 2.5fr 1fr 1fr; 
     /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
@@ -1297,8 +1297,7 @@ p {
 }
 
 
-
-#hesteterapiMain {
+#terapiMain {
     margin-left: var(--mobileLrgSpacer);
     margin-right: var(--mobileLrgSpacer);
 }
@@ -1328,7 +1327,7 @@ p {
         display: none;
     }
 
-    /* Hero billedet */
+    /* Billeder for hesteterapi */
 
     #heroImgHestMobile {
         display: none;
@@ -1341,13 +1340,21 @@ p {
         height: 582px;
         width: 100%;
     }
+    
+    .hesteterapiImg {
+        width: 100%;
+        margin-left: 6rem;
+    }
+
+    /* Billeder for hundeterapi */
+
 
     /*  */
     /* Header Navigation Media */
     /*  */
 
-    /* Styling af navigation */
 
+    /* Styling af navigation */
 
     #sideNav {
         position: sticky;
@@ -1369,57 +1376,48 @@ p {
 
     #sideNavContent ul li a {
         text-decoration: none;
-        color: #333;
-        font-weight: 500;
+        color: var(--txtColour);
         font-size: 1.1rem;
     }
 
     #sideNavContent a:hover {
-        color: #349D3A; 
+        color: var(--mainGreen); 
+        font-weight: bold;
     }
 
 
-
-
-
-
     /*  */
-    /* Hesteterapi Main */
+    /* Terapi Main */
     /*  */
 
-    #hesteterapiMain {
+    #terapiMain {
         margin-left: 2rem;
         margin-right: 2rem;
     }
 
-    #hesteterapiMain p {
+    #terapiMain p {
         font-size: 1.1rem;
         max-width: 65ch;
         line-height: 1.8rem;
     }
 
-    #hesteterapiMain h1 {
+    #terapiMain h1 {
         font-size: 2rem;
     }
 
-    #hesteterapiMain h2 {
+    #terapiMain h2 {
         font-size: 1.7rem;
     }
 
-    #hesteterapiMain h3 {
+    #terapiMain h3 {
         font-size: 1.4rem;
     }
 
-    /* Hesteterapi Billeder */
 
-    .hesteterapiImg {
-        width: 100%;
-        margin-left: 6rem;
-    }
 
     /* Pris sektion på hesteterapi */
 
-    .hundeterapiPris {
+    .terapiPrisSection {
         grid-template-columns: 2.5fr 1fr 1fr; 
         /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
         column-gap: 1.5rem;
@@ -1465,7 +1463,8 @@ p {
 
     #terapiMiniTekst {
         font-size: 0.8rem !important;
-        line-height: 0.2rem !important;
+        line-height: 0.75rem !important;
+        margin-bottom: 1.5rem;
     }
 
     #terapiPris {
