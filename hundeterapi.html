@@ -13,7 +13,9 @@
 
 <body>
     <header>
-        <img id="HeroImg" src="./assets/img/mobil billeder/MassageHund600.jpg" alt="Hundeterapi Hero">
+        <div id="heroImgHund"></div>
+        <div id="heroImgHundMobile"></div>
+        <!-- <img id="HeroImg" src="./assets/img/mobil billeder/MassageHund600.jpg" alt="Hundeterapi Hero"> -->
         <nav>
             <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
             <button class="menu" id="burgerMenu"
@@ -42,36 +44,87 @@
             </div>
         </nav>
     </header>
-    <main id="hundeterapiMain">
-        <section>
-            <div>
-                <h1>Hundeterapi</h1>
-                <p>Fysiurgisk hundeterapi kan reducere smerte, øge helingsprocessen, styrke hundens generelle velbefindende, og generelt forbedre hundens fysiske og mentale velvære.</p>
-                <img loading="lazy" class="hundeterapiImg" src="./assets/img/mobil billeder/LedmobiliseringHund600.jpg" alt="Billede af hendes hun på massagebordet">
-            </div>
-            <div>
-                <h3>Hvordan foregår fysiurgisk hundeterapi?</h3>
-
-                <p>Fysiurgisk hundeterapi tager udgangspunkt i den enkelte hund, og da ingen hunde er ens, bliver hver behandling tilpasset efter hundens behov.</p>
-
-                <p>Jeg tager udgangspunkt i hundens anatomi og biomekanik. Jeg starter konsultationen med at lokalisere spændinger og restriktioner ud fra ganganalyse, muskelanalyse og en undersøgelse af hestens krop.</p>
-
-                <p>Dialogen med dig som hundeejer spiller en vigtig rolle i afbalanceringen, da dine observationer af hunden og hundens daglige rutiner, kan give en værdifuld indsigt i, hvordan din hund trives og bevæger sig i hverdagen.</p>
-            </div>
+        <main id="terapiMain">
+        <section class="terapiColumnØverst">
+            <article id="terapiIntroTekst">
+                <div id="terapiSpacing">
+                    <h1>Hundeterapi</h1>
+                    <p>Fysiurgisk hundeterapi kan reducere smerte, øge helingsprocessen, styrke hundens generelle velbefindende, og generelt forbedre hundens fysiske og mentale velvære.</p>
+                </div>
+                <div>
+                    <h3>Hvordan foregår fysiurgisk hundeterapi?</h3>
+                    <p>Fysiurgisk hundeterapi tager udgangspunkt i den enkelte hund, og da ingen hunde er ens, bliver hver behandling tilpasset efter hundens behov.</p>
+                    <p>Jeg tager udgangspunkt i hundens anatomi og biomekanik. Jeg starter konsultationen med at lokalisere spændinger og restriktioner ud fra ganganalyse, muskelanalyse og en undersøgelse af hestens krop.</p>
+                    <p>Dialogen med dig som hundeejer spiller en vigtig rolle i afbalanceringen, da dine observationer af hunden og hundens daglige rutiner, kan give en værdifuld indsigt i, hvordan din hund trives og bevæger sig i hverdagen.</p>
+                </div>
+            </article>
+            <article>
+            <!-- Denne div skal have en anden class, på hundeterapi siden -->
+                <div class="terapiHundImg">
+                    <!-- <img loading="lazy" src="./assets/img/mobil billeder/MassageHest600.jpg" alt="Billede af hendes hest"> -->
+                </div> 
+            </article>
         </section>
         <section>
-            <div>
+            <div id="hesteTeknik">
                 <h3>Teknikker</h3>
                 <p>Teknikkerne jeg bruger, er med til at afspænde muskler, forbedre blodcirkulationen og øge mobiliteten hos vores firbenede venner.</p>
             </div>
-
-            <!-- Sliders med hendes teknikker her -->
+            <!--  -->
+            <!-- OBS! Teksten er rigtig, mangler de rigtige billeder til slideren !OBS -->
+            <!--  -->
+            <section class="sliderSection">
+                <article class="carousel">
+                    <button class="arrow arrowLeft" aria-label="Previous slide">&#8249;</button>
+                    <div class="carouselTrack">
+                        <div class="slide">
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Hvalpetræning600.jpg" alt="Massage">
+                                </div>
+                                <h3>Massage</h3>
+                                <p class="sliderTxt">Massage løsner spændinger ved blide tryk, stræk og gnidninger. Yderligere modvirker massage stress og forbygger muskelskader.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Rally600.jpg" alt="Kranio sekral terapi">
+                                </div>
+                                <h3>Kranio sakral terapi</h3>
+                                <p class="sliderTxt">Kranio sakral terapi benyttes til at løsne muskler og bindevæv, samt rette skævheder i kroppen. Der bruges blide tryk og derfor er dette en blid terapiform.</p>
+                            </div>
+                        </div>
+                        <div class="slide"> 
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/TraeningForAlle.jpg" alt="Ledmobilisering">
+                                </div>
+                                <h3>Ledmobilisering</h3>
+                                <p class="sliderTxt">Ledmobilisering bruges til at genoprette mobiliseringen i hestens led, således at leddet bevæger sig bedst muligt.</p>
+                            </div>
+                        </div>
+                        <div class="slide"> 
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/TraeningForAlle.jpg" alt="Laserterapi">
+                                </div>
+                                <h3>Laserterapi</h3>
+                                <p class="sliderTxt">Laserterapi er en terapiform som benytter bestemte bølgelængder af lys. Det infrarøde lys medfører energi til kroppens egne celler, som fremmer helingen af sår og skader. Yderligere kan laserterapi reducere hævelser og smerter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow arrowRight" aria-label="Next slide">&#8250;</button>
+                </article>
+            
+                <div class="dots"></div>
+                </section>
 
         </section>
-        <section class="terapiPrisSection">
+        <section id="terapiPrisSection">
             <h3>Priser</h3>
             <div class="terapiPris">
-                <span>Første konsultation*</span>
+                <span>Første konsultation</span>
                 <span>90 min</span>
                 <span>500 kr</span>
 
@@ -83,48 +136,60 @@
                 <span>30 min</span>
                 <span>200 kr</span>
             </div>
-            <p id="terapiMiniTekst">*Denne behandling kan bookes hvis man har været til første konsultation</p> 
-            <div>
-                <h3>Hvilke hunde har gavn af fysiurgisk hundeterapi?</h3>
-                <p>Ligesom os kan vores firbenede venner også have spændinger eller restriktioner i kroppen, og dette kan fysiurgisk hundeterapi afhjælpe.</p>
+            <div id="terapiBookTid">
+                <p id="terapiMiniTekst">*Denne behandling kan bookes hvis man har været til første konsultation</p> 
+                <button class="cta"><a href="./hundeterapi.html">Book tid her</a></button>
             </div>
         </section>
-        <section>
-            <div class="afbalancering">
-                <h3>Jeg laver afbalancering på hunde:</h3>
-                <p><span class="material-symbols-outlined check-icon">check</span>Indskrænket bevægelse</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Muskelspændinger</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Stivhed</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Manglende evne til at udføre en bestemt øvelse</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Genoptræning efter skade</p>
-                <p><span class="material-symbols-outlined check-icon">check</span>Adfærdsændringer/problemer</p>
-            </div>
-            <div>
-                <p>Eller blot som vedligeholdelse af hunds krop, unge som gamle hunde samt ved henvisning fra dyrlægen.</p>
-            </div>
-
-            <div class="afbalancering">
-                <h3>Jeg laver ikke afbalancering på hunde:</h3>
-                <p><span class="">X</span>Med feber og infektioner</p>
-                <p><span class="">X</span>Ved akut inflammation</p>
-                <p><span class="">X</span>Ved direkte på hævelser eller fibersprængninger</p>
-                <p><span class="">X</span>Hvis der er mindre end 48 timer til deltagelse i udstilling, konkurrence eller anden præstation.</p>
-                <p><span class="">X</span>Lokalt på hudproblemer</p>
-                <p><span class="">X</span>Ved cancer eller ikke-diagnosticerede knuder</p>
-                <p><span class="">X</span>Ved drægtighed</p>
-            </div>
-            <div>
-                <p>Der vil i ovenstående være tilfælde hvor en fysiurgisk hundeterapeut kan hjælpe efter at en dyrlæge har tilset hunden. Dette vil være et samarbejde mellem dyrlægen og hundeterapeuten.</p>
-                <p>Lad LM Hunde- og Hestefokus hjælpe din hund med at opnå optimal sundhed og livskvalitet gennem fysiurgisk hundeterapi!</p>
-            </div>           
+        <div id="terapiListTekst">
+            <h3>Hvilke hunde har gavn af fysiurgisk hundeterapi?</h3>
+            <p>Ligesom os kan vores firbenede venner også have spændinger eller restriktioner i kroppen, og dette kan fysiurgisk hundeterapi afhjælpe.</p>
+        </div>
+        <section class="terapiLister">
+            <article class="terapiList">
+                <div class="afbalancering">
+                    <h3>Jeg laver afbalancering på hunde:</h3>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Indskrænket bevægelse</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Muskelspændinger</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Stivhed</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Manglende evne til at udføre en bestemt øvelse</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Genoptræning efter skade</p>
+                    <p><span class="material-symbols-outlined check-icon">check</span>Adfærdsændringer/problemer</p>
+                </div>
+                <div class="afbalancering" id="terapiSpacing">
+                    <p>Eller blot som vedligeholdelse af hundens krop, unge som gamle hunde samt ved henvisning fra dyrlægen.</p>
+                </div>
+            </article>
+            <article class="terapiList">
+                <div class="afbalancering">
+                    <h3>Jeg laver ikke afbalancering på hunde:</h3>
+                    <p><span class="">X</span>Med feber og infektioner</p>
+                    <p><span class="">X</span>Ved akut inflammation</p>
+                    <p><span class="">X</span>Ved direkte på hævelser eller fibersprængninger</p>
+                    <p><span class="">X</span>Hvis der er mindre end 48 timer til deltagelse i udstilling, konkurrence eller anden præstation.</p>
+                    <p><span class="">X</span>Lokalt på hudproblemer</p>
+                    <p><span class="">X</span>Ved cancer eller ikke-diagnosticerede knuder</p>
+                    <p><span class="">X</span>Ved drægtighed</p>
+                </div>
+                <div class="afbalancer">
+                    <p>Der vil i ovenstående være tilfælde hvor en fysiurgisk hundeterapeut kan hjælpe efter at en dyrlæge har tilset hunde. Dette vil være et samarbejde mellem dyrlægen og hundeterapeuten.</p>
+                </div>
+            </article>
         </section>
-        <section>
-            <div>
+        <div id="terapiListTekst">
+            <p>Lad LM Hunde- og Hestefokus hjælpe din hund med at opnå optimal sundhed og livskvalitet gennem fysiurgisk hundeterapi.</p>
+        </div>
+        <section class="ctaSection">
+            <article class="leftSide">
                 <h2>Kontakt mig i dag</h2>
-                <p>Har du spørgsmål til lokation eller vil du vide mere om træn-inger og terapier? </p>
-                <p>Jeg er klar til at hjælpe.</p>
+                <p>Har du spørgsmål til lokation eller vil du vide mere om træn-inger og terapier? <span>Jeg er klar til at hjælpe.</span></p>
                 <button class="cta"><a href="./kontakt.html">Find eller kontakt mig!</a></button>
-            </div>
+            </article>
+            <article class="rightSide">
+                <h2>Din hest fortjener velvære og fri bevægelse</h2>
+                <p>Med fysiurgisk terapi hjælper jeg din hest til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hests krop før problemerne opstår.</p>
+                <button class="cta"><a href="./hundeterapi.html">Opdag fordelene ved Hesteterapi</a></button>
+            </article>
         </section>
     </main>
     <footer id="footer">

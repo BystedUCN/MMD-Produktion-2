@@ -1277,6 +1277,71 @@ p {
 
 /* kasper */
 
+.footerNav {
+    display: none;
+}
+
+#footer {
+    background-color: var(--darkGreen);
+    padding: 20px;
+    font-size: 14px;
+    color: var(--ctaTxt);
+}
+
+#footerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+}
+
+.footerOm {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+#footerKontaktInfo {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#footerKontaktInfo a {
+    display: block;
+    text-decoration: none;
+    color: var(--ctaTxt);
+}
+
+.footerSocial {
+    margin-top: var(--mobileSmlSpacer);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerIcons img {
+    width: 36px;
+    height: 24px;
+    margin-bottom: 4px;
+    filter: brightness(0) invert(1);
+}
+
+
+/*  */
+/*  */
+
+/* idk hvad jeg skal kalde denne endnu */
+
 .terapiColumnØverst {
     display: flex;
     flex-wrap: wrap;
@@ -1302,7 +1367,16 @@ p {
     margin-right: var(--mobileLrgSpacer);
 }
 
-.hesteterapiImg {
+.terapiHestImg {
+    display: block;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 372px;
+    height: auto;
+}
+
+.terapiHundImg {
     display: block;
     border-radius: 6px;
     margin-top: 1rem;
@@ -1327,35 +1401,15 @@ p {
         display: none;
     }
 
-    /* Billeder for hesteterapi */
-
-    #heroImgHestMobile {
-        display: none;
-    }
-
-    #heroImgHest {
-        background-image: url('../img/desktop billeder/MassageHestMassoerDesktop.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 582px;
-        width: 100%;
-    }
     
-    .hesteterapiImg {
-        width: 100%;
-        margin-left: 6rem;
-    }
-
-    /* Billeder for hundeterapi */
-
-
+    
     /*  */
     /* Header Navigation Media */
     /*  */
-
-
+    
+    
     /* Styling af navigation */
-
+    
     #sideNav {
         position: sticky;
         top: 0;
@@ -1373,22 +1427,69 @@ p {
         margin: 0;
         padding: 0;
     }
-
+    
     #sideNavContent ul li a {
         text-decoration: none;
         color: var(--txtColour);
         font-size: 1.1rem;
     }
-
+    
     #sideNavContent a:hover {
         color: var(--mainGreen); 
         font-weight: bold;
     }
-
-
+    
     /*  */
-    /* Terapi Main */
+    /* Terapi Main (Hund og Hest) */
     /*  */
+
+    /* Billeder for hesteterapi */
+
+    #heroImgHestMobile {
+        display: none;
+    }
+    
+    #heroImgHest {
+        background-image: url('../img/desktop billeder/MassageHestMassoerDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        width: 100%;
+    }
+ 
+    .terapiHestImg {
+        background-image: url('../img/desktop billeder/MassageHestDesktop.jpg');
+        background-size: cover;
+        width: 100vw;
+        border-radius: 6px;
+        margin-top: 8vw;
+    }
+    
+
+    /* Billeder for hundeterapi */
+
+    #heroImgHundMobile {
+        display: none;
+    }
+
+    #heroImgHund {
+        background-image: url('../img/desktop billeder/MassageHundDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        width: 100%;
+    }
+
+    .terapiHundImg {
+        background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        width: 100%;
+    }
+
+    
+    /* Main styling for terapi */
 
     #terapiMain {
         margin-left: 2rem;
@@ -1413,11 +1514,33 @@ p {
         font-size: 1.4rem;
     }
 
-
+    #terapiListTekst {
+        margin-top: var(--mobileMedSpacer);
+        margin-bottom: 6vw;
+        margin-left: 20vw;
+    }
 
     /* Pris sektion på hesteterapi */
 
-    .terapiPrisSection {
+    /* Book tid & pris sektion */
+
+    #terapiBookTid {
+        display: flex;
+        align-items: center;
+        gap: 10vw;
+    }
+
+    #terapiBookTid p {
+        margin: 0;
+    }
+
+    #terapiBookTid button.cta {
+        width: 415px;
+        max-height: 75px;
+    }
+
+
+    #terapiPrisSection {
         grid-template-columns: 2.5fr 1fr 1fr; 
         /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
         column-gap: 1.5rem;
@@ -1425,12 +1548,12 @@ p {
         max-width: 100%;
     }
 
-    /* Hvad hun vil/ikke vil gøre for heste sektion */
+    /* spacing i eller mellem sectioner */
 
-    
-
-
-    /* spacing mellem sectioner */
+    #terapiPrisSection, .terapiLister, .terapiListTekst {
+        margin-left: 8rem !important;
+        margin-right: 8rem !important;
+    }
 
     .afbalancering {
         margin-bottom: .5rem;
@@ -1471,15 +1594,32 @@ p {
         margin-bottom: var(--medSacer);
     }
 
+    /*  */
     /* Grid columns */
-    
+    /*  */
     
     .hesteColumnØverst {
         display: flex;
     }
 
+    #terapiIntroTekst {
+        max-width: 50ch;
+    }
+
+    /* Hvad hun vil/ikke vil gøre for heste sektion */
+
+    .terapiLister {
+        display: flex;
+        gap: 2vw;
+    }
+
+    .terapiList {
+        flex: 1;
+        min-width: 300px;
+    }
 
 }
+
 
 
 
