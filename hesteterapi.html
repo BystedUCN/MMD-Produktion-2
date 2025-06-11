@@ -13,6 +13,7 @@
 <body>
     <header>
         <div id="heroImgHest"></div>
+        <div id="heroImgHestMobile"></div>
         <!-- <img id="HeroImg" src="./assets/img/mobil billeder/MassageHestMassoer600.jpg" alt="Hesteterapi Hero"> -->
         <nav>
             <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
@@ -42,30 +43,79 @@
             </div>
         </nav>
     </header>
-    <main class="hesteterapiMain">
-        <section>
-            <div>
+    <main id="hesteterapiMain">
+        <section class="terapiColumnØverst">
+            <div id="hestIntroTekst">
                 <h1>Hesteterapi</h1>
                 <p>Fysiurgisk hesteterapi kan reducere smerte, øge helingsprocessen, styrke hestens generelle velbefindende, og generelt forbedre hestens fysiske og mentale velvære.</p>
-                <img loading="lazy" class="hesteterapiImg" src="./assets/img/mobil billeder/MassageHest600.jpg" alt="Billede af hendes hest">
             </div>
-            <div>
+            <div id="hestIntroTekst">
                 <h3>Hvordan foregår fysiurgisk hesteterapi?</h3>
                 <p>Fysiurgisk hesteterapi tager udgangspunkt i den enkelte hest, og da ingen heste er ens, bliver hver behandling tilpasset efter hestens behov.</p>
                 <p>Jeg tager udgangspunkt i hestens anatomi og biomekanik. Jeg starter konsultationen med at lokalisere spændinger og restriktioner ud fra ganganalyse, muskelanalyse og en undersøgelse af hestens krop.</p>
                 <p>Dialogen med dig som hesteejer spiller en vigtig rolle i afbalanceringen, da dine observationer af hesten og hestens daglige rutiner, kan give en værdifuld indsigt i, hvordan din hest trives og bevæger sig i hverdagen.</p>
             </div>
+            <div id="hestImgDesktop" >
+                <img loading="lazy" class="hesteterapiImg" src="./assets/img/mobil billeder/MassageHest600.jpg" alt="Billede af hendes hest">
+            </div> 
         </section>
         <section>
-            <div>
+            <div id="hesteTeknik">
                 <h3>Teknikker</h3>
                 <p>Teknikkerne jeg bruger, er med til at afspænde muskler, forbedre blodcirkulationen og øge mobiliteten hos vores firbenede venner.</p>
             </div>
-
-            <!-- Sliders med hendes teknikker her -->
+            <!--  -->
+            <!-- OBS! Teksten er rigtig, mangler de rigtige billeder til slideren !OBS -->
+            <!--  -->
+            <section class="sliderSection">
+                <article class="carousel">
+                    <button class="arrow arrowLeft" aria-label="Previous slide">&#8249;</button>
+                    <div class="carouselTrack">
+                        <div class="slide">
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Hvalpetræning600.jpg" alt="Massage">
+                                </div>
+                                <h3>Massage</h3>
+                                <p class="sliderTxt">Massage løsner spændinger ved blide tryk, stræk og gnidninger. Yderligere modvirker massage stress og forbygger muskelskader.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Rally600.jpg" alt="Kranio sekral terapi">
+                                </div>
+                                <h3>Kranio sakral terapi</h3>
+                                <p class="sliderTxt">Kranio sakral terapi benyttes til at løsne muskler og bindevæv, samt rette skævheder i kroppen. Der bruges blide tryk og derfor er dette en blid terapiform.</p>
+                            </div>
+                        </div>
+                        <div class="slide"> 
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/TraeningForAlle.jpg" alt="Ledmobilisering">
+                                </div>
+                                <h3>Ledmobilisering</h3>
+                                <p class="sliderTxt">Ledmobilisering bruges til at genoprette mobiliseringen i hestens led, således at leddet bevæger sig bedst muligt.</p>
+                            </div>
+                        </div>
+                        <div class="slide"> 
+                            <div class="sliderContent">
+                                <div id="træningCardImg">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/TraeningForAlle.jpg" alt="Laserterapi">
+                                </div>
+                                <h3>Laserterapi</h3>
+                                <p class="sliderTxt">Laserterapi er en terapiform som benytter bestemte bølgelængder af lys. Det infrarøde lys medfører energi til kroppens egne celler, som fremmer helingen af sår og skader. Yderligere kan laserterapi reducere hævelser og smerter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow arrowRight" aria-label="Next slide">&#8250;</button>
+                </article>
+            
+                <div class="dots"></div>
+                </section>
 
         </section>
-        <section>
+        <section id="terapiPris">
             <h3>Priser</h3>
             <div class="hundeterapiPris">
                 <span>Første konsultation</span>
@@ -81,12 +131,14 @@
                 <span>200 kr</span>
             </div>
             <div>
-                <p id="miniTekst">*Denne behandling kan bookes hvis man har været til første konsultation</p> 
-                <h3>Hvilke hunde har gavn af fysiurgisk hundeterapi?</h3>
-                <p>Ligesom os kan vores firbenede venner også have spændinger eller restriktioner i kroppen, og dette kan fysiurgisk hundeterapi afhjælpe.</p>
+                <p id="terapiMiniTekst">*Denne behandling kan bookes hvis man har været til første konsultation</p> 
             </div>
         </section>
         <section>
+            <div id="hesteterapiSpacing">
+                <h3>Hvilke hunde har gavn af fysiurgisk hundeterapi?</h3>
+                <p>Ligesom os kan vores firbenede venner også have spændinger eller restriktioner i kroppen, og dette kan fysiurgisk hundeterapi afhjælpe.</p>
+            </div>
             <div class="afbalancering">
                 <h3>Jeg laver afbalancering på heste:</h3>
                 <p><span class="material-symbols-outlined check-icon">check</span>Indskrænket bevægelse</p>
@@ -96,7 +148,7 @@
                 <p><span class="material-symbols-outlined check-icon">check</span>Genoptræning efter skade</p>
                 <p><span class="material-symbols-outlined check-icon">check</span>Adfærdsændringer/problemer</p>
             </div>
-            <div>
+            <div class="afbalancering" id="hesteterapiSpacing">
                 <p>Eller blot som vedligeholdelse af hestens krop, unge som gamle heste samt ved henvisning fra dyrlægen.</p>
             </div>
             <div class="afbalancering">
@@ -109,23 +161,22 @@
                 <p><span class="">X</span>Ved cancer eller ikke-diagnosticerede knuder</p>
                 <p><span class="">X</span>Ved drægtighed</p>
             </div>
-            <div>
+            <div class="afbalancering">
                 <p>Der vil i ovenstående være tilfælde hvor en fysiurgisk hesteterapeut kan hjælpe efter at en dyrlæge har tilset hesten. Dette vil være et samarbejde mellem dyrlægen og hesteterapeuten.</p>
                 <p>Lad LM Hunde- og Hestefokus hjælpe din hest med at opnå optimal sundhed og livskvalitet gennem fysiurgisk hesteterapi!</p>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Find eller kontakt mig!</h2>
-                <p>Har du spørgsmål til lokation eller vil du vide mere om træn-inger og terapier? </p>
-                <p>Jeg er klar til at hjælpe.</p>
+        <section class="ctaSection">
+            <article class="leftSide">
+                <h2>Kontakt mig i dag</h2>
+                <p>Har du spørgsmål til lokation eller vil du vide mere om træn-inger og terapier? <span>Jeg er klar til at hjælpe.</span></p>
                 <button class="cta"><a href="./kontakt.html">Find eller kontakt mig!</a></button>
-            </div>
-            <div>
+            </article>
+            <article class="rightSide">
                 <h2>Din hund fortjener velvære og fri bevægelse</h2>
-                <p>Med fysiurgisk terapi hjælper jeg din hest til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hests krop før problemerne opstår.</p>
+                <p>Med fysiurgisk terapi hjælper jeg din hund til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hunds krop før problemerne opstår.</p>
                 <button class="cta"><a href="./hundeterapi.html">Opdag fordelene ved Hundeterapi</a></button>
-            </div>
+            </article>
         </section>
     </main>
     <footer id="footer">
