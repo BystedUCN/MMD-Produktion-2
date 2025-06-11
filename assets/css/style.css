@@ -601,7 +601,7 @@ p {
 
 #footerKontaktInfo {
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #footerKontaktInfo a {
@@ -623,12 +623,12 @@ p {
     align-items: center;
 }
 
-.footerIcons img {
+/* .footerIcons img {
     width: 36px;
     height: 24px;
     margin-bottom: 4px;
     filter: brightness(0) invert(1);
-}
+} */
 
 /* Navn - Adresse */
     /* e-mail */
@@ -1143,6 +1143,17 @@ p {
 
 
 /* Imilia */
+.iconAppend svg, .iconAppend .material-icons, .iconAppend i{
+    display: none;
+}
+
+.footerIcons{
+    font-size: 25px;
+}
+
+
+
+
 
 
 
