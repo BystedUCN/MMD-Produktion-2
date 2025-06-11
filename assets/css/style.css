@@ -521,7 +521,7 @@ p {
 }
 
 .cta:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .cta a {
@@ -1352,11 +1352,137 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Martin */
+@media (min-width: 1100px) {
+    .dogSlider .carouselTrack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        overflow: visible;
+        scroll-snap-type: none;
+        margin: 2rem;
+    }
+
+    .dogSlider .slide {
+        flex: none;
+        scroll-snap-align: unset;
+        margin-right: 0;
+    }
+
+    .dogSlider .arrow, .dogSlider .dots {
+        display: none !important;
+    }
+
+    .dogSlide {
+        display: block;
+        transition: 300ms ease;
+    }
+
+    .dogSlide:nth-of-type(1) {
+        margin-right: var(--smlSpacer);
+    }
+
+    .dogSlide:nth-of-type(2) {
+        margin-inline: var(--smlSpacer);
+    }
+
+    .dogSlide:nth-of-type(3) {
+        margin-left: var(--smlSpacer);
+    }
+
+    .dogSlide:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+   
+   .ctaSection {
+    display: flex;
+    margin-inline: var(--secSpacer);
+   }
+   .rightSide {
+    width: 50%;
+    margin-left: var(--smlSpacer);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   .leftSide {
+    width: 50%;
+    margin-right: var(--smlSpacer);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+   }
+   
+   .leftSide p {
+    padding-bottom: var(--smlSpacer);
+    margin-bottom: auto;
+   }
+
+   .ctaSection button {
+    margin: 0 auto;
+    margin-block: var(--medSacer);
+   }
 
 
+   /* .ctaSection {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: auto auto auto;
+       gap: 1rem;
+       margin-inline: var(--secSpacer)
+   }
 
+   .ctaSection h2:nth-of-type(1) {
+       grid-column: 1;
+       grid-row: 1;
+   }
 
+   .ctaSection h2:nth-of-type(2) {
+       grid-column: 2;
+       grid-row: 1;
+   }
+
+   .ctaSection p:nth-of-type(1) {
+       grid-column: 1;
+       grid-row: 2;
+   }
+
+   .ctaSection p:nth-of-type(2) {
+       grid-column: 2;
+       grid-row: 2;
+   }
+
+   .ctaSection button:nth-of-type(1) {
+       grid-column: 1;
+       grid-row: 3;
+   }
+
+   .ctaSection button:nth-of-type(2) {
+       grid-column: 2;
+       grid-row: 3;
+   } */
+}
 
 
 
