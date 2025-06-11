@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <img id="HeroImg" src="./assets/img/mobil billeder/LMHundeOgHestefokusLiseMedHunde600.jpg" alt="Hundetræning Hero">
+        <div id="hundetraeningHero"></div>
         <nav>
             <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
             <button class="menu" id="burgerMenu"
@@ -30,19 +30,19 @@
             <div id="sideNav">
                 <div id="sideNavContent">
                     <ul>
-                        <li class="navForside"><a href="./index.html">Forside</a></li>
-                        <li class="navHundetræning"><a href="./hundetræning.html">Hundetræning</a></li>
-                        <li class="navHundeterapi"><a href="./hundeterapi.html">Hundeterapi</a></li>
-                        <li class="navHesteterapi"><a href="./hesteterapi.html">Hesteterapi</a></li>
-                        <li class="navKontakt"><a href="./kontakt.html">Kontakt</a></li>
+                        <li class="navForside navLink"><a href="./index.html">Forside</a></li>
+                        <li class="navHundetræning navLink"><a href="./hundetræning.html">Hundetræning</a></li>
+                        <li class="navHundeterapi navLink"><a href="./hundeterapi.html">Hundeterapi</a></li>
+                        <li class="navHesteterapi navLink"><a href="./hesteterapi.html">Hesteterapi</a></li>
+                        <li class="navKontakt navLink"><a href="./kontakt.html">Kontakt & Info</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main id="hundetræningMain">
-        <section class="Sections">
-            <div>
+        <section class="sections">
+            <article>
                 <h1>Hundetræning</h1>
 
                 <p>Hundene bliver kaldt menneskets bedste ven, men det er ikke kommet uden træning og stærkt sammenhold, det er nemlig helt essentielt for forholdet mellem os og vores firbenede venner.</p>
@@ -50,10 +50,12 @@
                 <p>Alle træningstilbud bliver skræddersyet efter de deltagenes behov, så er det din første træning eller har du og din hund trænet en del allerede, så vil der blive taget godt hånd om jer.</p>
 
                 <p>Ved tilmelding af et af mine træningstilbud får du en email med praktiske informationer og hvad i skal medbringe,  samt et link til en lukket facebookgruppe for dem der træner eller har trænet hos mig.</p>
-            </div>
+
+                <img src="./assets/img/mobilBilleder/" alt="">
+            </article>
         </section>
         <section>
-            <div>
+            <div id="forloeb">
                 <h3>Forløb</h3>
                 <p>Hvis du er klar på at dedikere en periode af tid til at træne sammen med din hvalp, teenager/unghund, voksne eller ældre hund er et af disse forløb helt sikkert noget for jer! Forløbene varer i 6 uger, og kommer til at berige både dig og din hund med et tættere bånd og måske starten på en fast fælles aktivitet.</p>
             </div>
@@ -65,7 +67,7 @@
                         <div class="slide dogSlide">
                             <div class="sliderContent">
                                 <div id="træningCardImg">
-                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Hvalpetræning600.jpg" alt="Hvalpetræning">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/Hvalpetræning600.jpg" alt="Hvalpetræning">
                                 </div>
                                 <h3>Hvalpetræning</h3>
                                 <p class="sliderTxt">Er du ny hundeejer og vil du gerne komme bedst muligt i gang med alle de glæder, din nye firbenede ven kan bringe dig og
@@ -75,7 +77,7 @@
                         <div class="slide dogSlide">
                             <div class="sliderContent">
                                 <div id="træningCardImg">
-                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Rally600.jpg" alt="Rally lydighed">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/Rally600.jpg" alt="Rally lydighed">
                                 </div>
                                 <h3>Rally lydighed</h3>
                                 <p class="sliderTxt">Har du og din hund et lille konkurrencegen gemt i jer eller har i lyst til at være sammen om at forbedre jeres bånd til hinanden gennem sjove og udfordrende baner, hvor målet er at forbedre jeres bånd og kommunikation ved at komme mest præcist igennem en spændende bane med forskellige øvelser? </p>
@@ -84,7 +86,7 @@
                         <div class="slide dogSlide"> 
                             <div class="sliderContent">
                                 <div id="træningCardImg">
-                                <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/TraeningForAlle.jpg" alt="Træning for alle">
+                                <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/TraeningForAlle.jpg" alt="Træning for alle">
                                 </div>
                                 <h3>Træning for alle</h3>
                                 <p class="sliderTxt">Er du hundeejer og vil gerne træne din hund på en sjov og effektiv måde? Så er dette hold noget for dig! Dette hold tager dig igennem en smagsprøve på alle mine træningstilbud, samt hvad du som hundeejer har et behov eller ønske om at træne.</p>
@@ -99,7 +101,7 @@
 
         </section>
         <section>
-            <div>
+            <div id="traening">
                 <h3>Træning</h3>
                 <p>Har i en travl hverdag og gerne vil komme til træning når det passer jer, eller vil i gerne have en sjov og lærerig oplevelse sammen kan i tilmelde jer et af tilbudene, som i kan benytte jer af når det passer jer. Det kunne være at du gerne vil forbedre din hunds generelle sundhed, lære at genkende forskellige dufte, eller lære at gå spor.</p>
             </div>
@@ -111,7 +113,7 @@
                         <div class="slide dogSlide">
                             <div class="sliderContent">
                                 <div id="træningCardImg">
-                                    <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/HundeFitness600.jpg" alt="Hundefitness">
+                                    <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/HundeFitness600.jpg" alt="Hundefitness">
                                 </div>
                                 <h3>Hundefitness</h3>
                                 <p class="sliderTxt">Hundefitness styrker din hunds balance, smidighed og muskler gennem sjove og skånsomme øvelser. Det forebygger skader, forbedrer bevægeligheden og giver mental stimulering – perfekt for hunde i alle aldre!</p>
@@ -121,7 +123,7 @@
                         <div class="slide dogSlide">
                             <div class="sliderContent">
                                 <div id="træningCardImg">
-                                    <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Sportraening.jpg" alt="Sporarbejde">
+                                    <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/Sportraening.jpg" alt="Sporarbejde">
                                 </div>
                                 <h3>Sporarbejde</h3>
                                 <p class="sliderTxt">Vil du styrke samarbejdet mellem dig og din firbenede ven, mens du stimulerer hunden mentalt og lærer at læse din hunds signaler. Så kunne spor arbejde være lige noget for jer! Din hund lærer at opsøge færten af et kunstigt anlagt schweiss spor, og skal derigennem finde frem til løbet. </p>
@@ -131,7 +133,7 @@
                         <div class="slide dogSlide">
                             <div class="sliderContent">
                                 <div id="træningCardImg">
-                                    <img loading="lazy" class="sliderImg" src="./assets/img/mobil billeder/Nosework600.jpg" alt="Nosework">
+                                    <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/Nosework600.jpg" alt="Nosework">
                                 </div>
                                 <h3>Nosework</h3>
                                 <p class="sliderTxt">Har din hund en nysgerrig snude og kan lide at arbejde selvstændigt, så kan nosework være lige noget for din firbenede ven. Din hund lærer at søge efter 4 forskellige kunstige dufte i forskellige miljøer. Træningen tilpasses efter netop din hunds alder, erfaring og fysik. </p>
