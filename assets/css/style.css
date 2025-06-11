@@ -298,18 +298,18 @@ main {
 }
 
 .hundeterapiPris {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr 1fr; 
-  /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
-  column-gap: 1.5rem; 
-  /* højsontal gap */
-  row-gap: 1rem; 
-  /* vertical gap */
-  text-align: left;
-  max-width: 100%;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr; 
+    /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
+    column-gap: 1.5rem; 
+    /* højsontal gap */
+    row-gap: 1rem; 
+    /* vertical gap */
+    text-align: left;
+    max-width: 100%;
 }
 
-#miniTekst {
+#terapiMiniTekst {
     font-size: 10px;
     max-width: 32ch;
 }
@@ -335,7 +335,7 @@ main {
 /* Hesteterapi */
 /*  */
 
-.hesteterapiMain {
+/* #hesteterapiMain {
     margin-left: var(--mobileLrgSpacer);
     margin-right: var(--mobileLrgSpacer);
 }
@@ -347,7 +347,7 @@ main {
     margin-bottom: 1rem;
     max-width: 372px;
     height: auto;
-}
+} */
 
 
 /*  */
@@ -1103,6 +1103,55 @@ p {
 
 /* kasper */
 
+/*  */
+/* Hesteterapi */
+/*  */
+
+.terapiColumnØverst {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+}
+
+/* flytter den tredje div til at være den anden div, for at få billedet til at være rigtigt på mobil. */
+.terapiColumnØverst > div:nth-child(3) {
+  order: 2;
+}
+
+.terapiColumnØverst > div:nth-child(2) {
+  order: 3;
+}
+
+.terapiColumnØverst > div:nth-child(1) {
+  order: 1;
+}
+
+
+
+#hesteterapiMain {
+    margin-left: var(--mobileLrgSpacer);
+    margin-right: var(--mobileLrgSpacer);
+}
+
+.hesteterapiImg {
+    display: block;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 372px;
+    height: auto;
+}
+
+#heroImgHestMobile {
+    background-image: url('../img/mobil billeder/MassageHestMassoer1100.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 275px;
+    width: 100%;
+}
+
+
+
 /* Desktop styling */
 @media (min-width: 1100px) {
 
@@ -1112,7 +1161,8 @@ p {
     }
 
     /* Hero billedet */
-    #heroImg {
+
+    #heroImgHestMobile {
         display: none;
     }
 
@@ -1155,6 +1205,113 @@ p {
         font-weight: 500;
         font-size: 1.1rem;
     }
+
+    #sideNavContent a:hover {
+        color: #349D3A; 
+    }
+
+
+
+
+
+
+    /*  */
+    /* Hesteterapi Main */
+    /*  */
+
+    #hesteterapiMain {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #hesteterapiMain p {
+        font-size: 1.1rem;
+        max-width: 65ch;
+        line-height: 1.8rem;
+    }
+
+    #hesteterapiMain h1 {
+        font-size: 2rem;
+    }
+
+    #hesteterapiMain h2 {
+        font-size: 1.7rem;
+    }
+
+    #hesteterapiMain h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Hesteterapi Billeder */
+
+    .hesteterapiImg {
+        width: 100%;
+        margin-left: 6rem;
+    }
+
+    /* Pris sektion på hesteterapi */
+
+    .hundeterapiPris {
+        grid-template-columns: 2.5fr 1fr 1fr; 
+        /* 2.5fr for at lave første column bredere (kan ikke være mindre med 16px tekst størrelse) */
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+        max-width: 100%;
+    }
+
+    /* Hvad hun vil/ikke vil gøre for heste sektion */
+
+    
+
+
+    /* spacing mellem sectioner */
+
+    .afbalancering {
+        margin-bottom: .5rem;
+    }
+
+    #hesteterapiSpacing {
+        margin-bottom: 1.5rem;
+    }
+
+    #hestePris {
+        margin-bottom: 2rem;
+    }
+
+    #hesteterpiBund {
+        margin-inline: 2rem;
+    }
+
+    #terapiTekst {
+        margin-bottom: .5rem;
+    }
+
+
+    /* Genneral om tekst, blandt andet noget af det som ikke skal stå i et grid / columns */
+
+    #hesteTeknik {
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+        max-width: 65ch;
+    }
+
+    #terapiMiniTekst {
+        font-size: 0.8rem !important;
+        line-height: 0.2rem !important;
+    }
+
+    #terapiPris {
+        margin-bottom: var(--medSacer);
+    }
+
+    /* Grid columns */
+    
+    
+    .hesteColumnØverst {
+        display: flex;
+    }
+
+
 }
 
 
