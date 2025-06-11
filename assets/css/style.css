@@ -1076,38 +1076,34 @@ p {
 
 
 /* Imilia */
+.footerOm .material-icons {
+  width: 24px;  
+    font-size: 30px;
+}
+.footerOm svg{
+    width: 28.5px;
+    height: 30px;
+    fill: var(--ctaTxt);
+}
 
+.footerKontaktHøjre .fa-location-dot, .footerKontaktHøjre .material-icons{
+    font-size: 30px;
+    width: 24px;
 
+}
+.footerIcons {
+    font-size: 30px;
 
+}
 
+.footerOm, .footerKontaktHøjre {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.iconAppend {
+    display: flex;
+}
 
 
 
