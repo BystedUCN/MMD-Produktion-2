@@ -25,7 +25,7 @@ export function burger() {
 
 // Link til slider https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
     export function slider() {
-       document.querySelectorAll('.dogSlider').forEach(slider => {
+       document.querySelectorAll('.sliderSection').forEach(slider => {
     // Hent HTML-elementer fra DOM'en
         // Hent HTML-elementer fra DOM'en
         const track = slider.querySelector('.carouselTrack'); // Selve "banen", som slides ligger i
@@ -142,4 +142,16 @@ export function fetchData() {
         .catch(err => {
             console.log('Fejl i afhentning af data', err);
         });
+};
+
+export function navActive() {
+    document.addEventListener('DOMContentLoaded', () => { // venter på at alt er loaded
+        const currentPath = window.location.pathname; //erklærer konstanten 
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute('href') === currentPath) {
+            link.classList.add('navActive');
+          }
+        });
+      });
 };
