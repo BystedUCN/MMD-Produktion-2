@@ -1127,8 +1127,7 @@ p {
 }
 
 
-
-#hesteterapiMain {
+#terapiMain {
     margin-left: var(--mobileLrgSpacer);
     margin-right: var(--mobileLrgSpacer);
 }
@@ -1219,26 +1218,26 @@ p {
     /* Hesteterapi Main */
     /*  */
 
-    #hesteterapiMain {
+    #terapiMain {
         margin-left: 2rem;
         margin-right: 2rem;
     }
 
-    #hesteterapiMain p {
+    #terapiMain p {
         font-size: 1.1rem;
         max-width: 65ch;
         line-height: 1.8rem;
     }
 
-    #hesteterapiMain h1 {
+    #terapiMain h1 {
         font-size: 2rem;
     }
 
-    #hesteterapiMain h2 {
+    #terapiMain h2 {
         font-size: 1.7rem;
     }
 
-    #hesteterapiMain h3 {
+    #terapiMain h3 {
         font-size: 1.4rem;
     }
 
@@ -1297,7 +1296,7 @@ p {
 
     #terapiMiniTekst {
         font-size: 0.8rem !important;
-        line-height: 0.2rem !important;
+        line-height: 0.75rem !important;
     }
 
     #terapiPris {
