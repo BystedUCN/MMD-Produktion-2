@@ -636,6 +636,15 @@ p {
 /*  */
 
 @media (min-width: 1100px) {
+
+    * {
+        line-height: 150%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
       
     /*  */
     /* footer Meida */
@@ -681,17 +690,17 @@ p {
     /* DESKTOP: 2-column layout */
     /*  */
 
-    .Sections {
+ {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
     
-    .Sections #venstre {
+ #venstre {
         grid-column: 1;
     }
 
-    .Sections #højre {
+ #højre {
         grid-column: 2;
     }
 
@@ -723,7 +732,7 @@ p {
     }
     
     .cta {
-        height: 75px;
+        height: 65px;
         font-size: 1.5rem;
         margin-top: 1.5rem;
     }
@@ -742,6 +751,7 @@ p {
             overflow: visible;
             scroll-snap-type: none;
             margin: 2rem;
+            margin-block: 2.5rem;
         }
     
         .dogSlider .slide {
@@ -806,7 +816,8 @@ p {
     
         .ctaSection button {
             margin: 0 auto;
-            margin-block: var(--medSacer);
+            margin-top: var(--medSacer);
+            margin-bottom: var(--secSpacer);      
         }
 
     /*  */
@@ -1431,7 +1442,7 @@ p {
     #sideNavContent ul li a {
         text-decoration: none;
         color: var(--txtColour);
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     
     #sideNavContent a:hover {
@@ -1836,15 +1847,57 @@ p {
 
 
 
+
 /* Martin */
-@media (min-width: 1100px) {
-    .navActive {
-        font-weight: bold;
-        color: var(--mainGreen);
-    }
+#hundetraeningHero {
+    background-image: url("../img/mobilBilleder/LMHundeOgHestefokusLiseMedHunde600.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
 }
 
+.footerNav {
+    text-decoration: underline;
+}
 
+@media (min-width: 600px) {
+    #hundetraeningHero {
+        background-image: url("../img/mobilBilleder/LMHundeOgHestefokusLiseMedHunde1100.jpg");
+        height: 50vh;
+    }
+}
+@media (min-width: 1100px) {
+    .navLink a {
+        transition: 0.2s ease, text-decoration-color 0.2s ease;
+    }
+    .navLink.navActive a {
+        color: var(--mainGreen) !important;
+        font-weight: bold;
+    }
+    #sideNav {
+        all: unset;
+        display: contents;
+    }
+    
+    #sideNavContent {
+        align-items: center;
+    }
+    #hundetraeningHero {
+        background-image: url("../img/desktopBilleder/HundetraeningHero.jpg");
+        height: 70vh;
+    }
+
+    .sections {
+        margin-bottom: var(--secSpacer);
+        max-width: 85ch;
+    }
+
+    #forloeb, #traening {
+        max-width: 85ch !important;
+    }
+}
 
 
 
