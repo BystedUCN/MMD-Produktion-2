@@ -172,6 +172,7 @@ nav a {
 main {
     line-height: 25px;
     margin-inline: var(--mobileSmlSpacer);
+    color: var(--txtColour);
 }
 
 /* Hero Billeder */
@@ -877,7 +878,7 @@ p {
     }
 
     .kontaktFlexTopLeft {
-        padding-right: 3rem;
+        padding-right: 4rem;
     }
     #kontaktFlexTop {
         width: 85ch;
@@ -896,8 +897,31 @@ p {
     .ctaKontakt {
         display: flex;
         justify-self: center;
+        margin-bottom: var(--secSpacer);
+    }
+    #opstart {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+        align-items: start;
+    }
+    #opstart p{
+        max-width: 75ch;
+        margin-bottom: var(--medSacer);
+    }
+    #opstart img {
+        max-width: 40vw; 
+        max-height: 100%;
+    }
+    #opstartWrap {
+        margin-bottom: var(--bigSpacer);
+    }
+    #opstartWrap p {
+        max-width: 65ch;
+        margin-bottom: var(--medSacer);
     }
 }
+
 #kontaktImgBottom {
     width: 100%;
 }
@@ -910,12 +934,11 @@ p {
     font-weight: 400;
 }
     
-    #opstart p{
-        max-width: 75ch;
-        margin-bottom: var(--medSacer);
-    }
-    
-    
+#opstart img {
+    width: 100%;
+    border-radius: 6px;
+}    
+
     
     
     
