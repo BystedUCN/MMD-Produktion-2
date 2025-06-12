@@ -1772,7 +1772,9 @@ p {
     }
 }
 
-
+#heroVideo {
+    width: 100vw;
+}
 
 
 
