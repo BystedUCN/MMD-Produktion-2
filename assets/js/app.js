@@ -161,3 +161,20 @@ export function navActive() {
         });
       });
 };
+
+export function heroSwapper () {
+   function swapHero(e) { 
+        if (e.matches) {
+            const container = document.getElementById("heroVideo");
+            if (container) {
+            container.outerHTML = `
+            <video autoplay muted loop playsinline id="heroVideo" src="./assets/img/HeaderVideo.mov"></video>
+            `;
+            }
+        }
+    };
+  
+  const mediaQuery = window.matchMedia("(min-width: 1100px)");
+  swapHero(mediaQuery);
+  mediaQuery.addEventListener("change", swapHero);
+};
