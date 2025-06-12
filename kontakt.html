@@ -19,11 +19,7 @@
 
   <body>
     <header>
-      <img
-        id="HeroImg"
-        src="./assets/img/mobil billeder/LMHundeOgHestefokusMedTreHunde600.jpg"
-        alt="Kontakt hero"
-      />
+      <div id="kontaktHero"></div>
       <nav>
         <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
         <button
@@ -67,43 +63,82 @@
     </header>
     <main id="kontakt-main">
       <h1 id="kontakt-h1">Kontakt & Info</h1>
-      <section>
-        <h2 class="kontakt-h2">Kontaktinformationer</h2>
-        <p class="kontakt-p">
-          Har du spørgsmål eller ønsker af andre grunde at kontakte mig, så kan
-          jeg fanges på mail og telefon.
-        </p>
-        <p>Mail: info@lm-hundeoghestefokus.dk</p>
-        <p>Telefonnummer: +45 26 28 23 37</p>
+      <section class="kontaktFlexTop">
+        <article class="kontaktFlexTopLeft">
+          <h2 class="kontakt-h2">Kontaktinformationer</h2>
+          <p class="kontakt-p">
+            Har du spørgsmål eller ønsker af andre grunde at kontakte mig, så kan
+            jeg fanges på mail og telefon.
+          </p>
+          <span class="kontaktBold">Mail: <a class="linkKontakt" href="mailto:info@lm-hundeoghestefokus.dk">info@lm-hundeoghestefokus.dk</a></span>
+          <span class="kontaktBold">Telefonnummer: <a class="linkKontakt" href="tel:+45 26 28 23 37"> +45 26 28 23 37</a></span>
+        </article>
+        <article class="kontaktFlexTopRight">
+          <h2 class="kontakt-h2">Lokation for terapi og træning</h2>
+          <p class="kontakt-p">
+            Medmindre andet er meldt ud, så vil alle træninger og terapi-sessioner
+            finde sted i på</p><address><a class="linkKontakt" href="https://www.google.com/maps/place/Tofteg%C3%A5rdsvej+120,+9440+Aabybro/@57.1865022,9.7367487,17z/data=!3m1!4b1!4m6!3m5!1s0x4649260fda095a91:0x8afc9a895b7f81c6!8m2!3d57.1864993!4d9.7393236!16s%2Fg%2F11crtgyhbm?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener no-referrer">Toftegårdsvej 120, 9440 Aabybro</a></address>
+            <p>Parkering kan foregå på
+            p-pladsen eller langs højre side af grusvejen.
+          </p>
+      </article>
       </section>
-      <section>
-        <h2 class="kontakt-h2">Lokation for terapi og træning</h2>
-        <p class="kontakt-p">
-          Medmindre andet er meldt ud, så vil alle træninger og terapi-sessioner
-          finde sted i Aabybro på Toftegårdsvej 120, Parkering kan foregå på
-          p-pladsen eller langs højre side af grusvejen.
-        </p>
-      </section>
-      <search>
-        <h2 class="kontakt-h2">Åbningstider</h2>
-        <!-- Skal have et "call" med JS, for at bestemme åbningstider -->
+      <section id="flexContainerKontaktBottom">
         <div>
-          <p>Mandag</p>
-          <p>Tirsdag</p>
-          <p>Onsdag</p>
-          <p>Torsdag</p>
-          <p>Fredag</p>
-          <p>Lørdag</p>
-          <p>Søndag</p>
+          <h2 class="kontakt-h2">Åbningstider</h2>
+          <!-- Skal have et "call" med JS, for at bestemme åbningstider -->
+          <div>
+            <p>Mandag</p>
+            <p>Tirsdag</p>
+            <p>Onsdag</p>
+            <p>Torsdag</p>
+            <p>Fredag</p>
+            <p>Lørdag</p>
+            <p>Søndag</p>
+          </div>
         </div>
-      </search>
-      <div id="forsideImgBottom">
+        <div class="fetchTime"></div>
         <img
+        id="kontaktImgBottom"
           loading="lazy"
-          src="./assets/img/mobil billeder/LMHundeOgHesteFokus.jpg "
+          src="./assets/img/desktopBilleder/LMHundeOgHesteFokusDesktop.jpg "
           alt="Billede af hendes hunde"
-        />
-      </div>
+          />
+      </section>
+
+      <button class="cta ctaKontakt"><a href="./index.html#forsideSlider">Se hvad jeg tilbyder her</a></button>
+<section>
+  <article id="opstart">
+      <h3>Opstarten</h3>
+      <p>Det hele begyndte med en skøn lille fransk bulldog ved navn Herbert. Han var min trofaste følgesvend, men desværre også
+      en race præget af mange sundhedsmæssige udfordringer. Allerede som 3-årig måtte jeg tage den svære beslutning at sige
+      farvel til ham på grund af en diskusprolaps i lænden. På det tidspunkt blev aflivning anbefalet frem for operation og
+      genoptræning, hvilket gjorde tabet endnu sværere at acceptere.</p>
+      
+      <p>Efter Herbert var der et tomrum i hjemmet, og jeg vidste, at jeg måtte finde en ny firbenet ven. Valget faldt på en
+      Curly Coated Retriever, og efter næsten et års ventetid kom han endelig til mig en skøn hanhund med det fine navn Dark
+      Sapphires Cornish Aromatic, bedre kendt som Rambo.</p>
+      
+      <p>Da Rambo fyldte et år og begyndte at deltage i udstillinger, lagde jeg mærke til, at han ofte gik i pasgang og havde
+      svært ved at balancere sin krop korrekt. Jeg vidste, at jeg måtte gøre noget, før det udviklede sig til et større
+      problem.</p>
+      
+      <p>Efter et besøg hos en kiropraktor viste det sig, at Rambo havde et skævt og låst bækken heldigvis noget, der kunne
+      rettes op med den rette behandling.</p>
+      
+      <p>Det fik mig til at tænke: Hvorfor er det ikke mere almindeligt at bruge fysiurgiske behandlinger og terapi til hunde,
+      før de allerede har udviklet skader?</p>
+      
+      <p>Jo mere jeg satte mig ind i det, desto mere voksede min passion for at hjælpe andre hundeejere med at forebygge skader
+      og optimere deres hundes trivsel gennem målrettet terapi.</p>
+      
+      <p>Men hvorfor også heste?</p>
+      
+      <p>Som barn og ung har jeg altid haft heste, og jeg husker tydeligt, hvordan det var en selvfølge at bruge forskellige
+      terapiformer til dem. Det fascinerede mig at se, hvordan den rette behandling kunne gøre en stor forskel. Nu føles det
+      helt naturligt at stå på den anden side ikke som en, der søger hjælp, men som en, der giver den.</p>
+    </article>
+    </section>
     </main>
     <footer id="footer">
       <nav class="footerNav">

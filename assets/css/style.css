@@ -17,6 +17,7 @@
     --txtColour: #1E1E1E;
     --lightGrey: #D9D9D9;
     --ctaTxt: #FFFFFF;
+    --starColour: #FFE500;
 }
 * {
     box-sizing: border-box;
@@ -170,6 +171,7 @@ nav a {
 
 main {
     line-height: 25px;
+    margin-inline: var(--mobileSmlSpacer);
 }
 
 /* Hero Billeder */
@@ -184,51 +186,15 @@ main {
 /*  */
 /* Forside */
 /*  */
+#flexContainerTop, .sliderForside, #liseKval, .anmeldelseSec {
+    margin-block: var(--mobileSmlSpacer);
 
-#forsideMain {
-    margin-left: var(--mobileLrgSpacer);
-    margin-right: var(--mobileLrgSpacer);
-    line-height: 25px;
 }
 
-
-/* forside - Billeder */
-
-
-
-#forsideImgTop {
-    width: 100%;
-    height: 212px;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#forsideImgTop img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#forsideImgBottom {
-    width: 100%;
-    height: 294px;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#forsideImgBottom img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* Anmeldelser */
 
-#anmeldelse {
+.anmeldelse {
     border: 1px solid #ccc;
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -236,13 +202,17 @@ main {
     background-color: #fff;
     margin-bottom: 1rem;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 150%;
     min-height: 160px; /* Ændre højden på cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
+.anmeldelse .fa-star {
+    color: var(--starColour);
+    font-size: 20px;
+    margin-right: .5rem;
+}
 
 /*  */
 /* Hundetræning */
@@ -601,7 +571,7 @@ p {
 
 #footerKontaktInfo {
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #footerKontaktInfo a {
@@ -623,12 +593,12 @@ p {
     align-items: center;
 }
 
-.footerIcons img {
+/* .footerIcons img {
     width: 36px;
     height: 24px;
     margin-bottom: 4px;
     filter: brightness(0) invert(1);
-}
+} */
 
 /* Navn - Adresse */
     /* e-mail */
@@ -655,7 +625,9 @@ p {
     p {
         font-size: 1.5rem;
     }
-      
+    main {
+        margin-inline: var(--secSpacer);
+    }
     /*  */
     /* footer Meida */
     /*  */
@@ -690,11 +662,10 @@ p {
 
     /* Anmeldelser på forside */
 
-    #anmeldelse {
-        max-width: 600px;
-        margin: 24px auto;
-        font-size: 1.1rem;
+    .anmeldelse {
+        max-width: 825px;
     }
+
 
     /*  */
     /* DESKTOP: 2-column layout */
@@ -833,117 +804,174 @@ p {
     /*  */
     /* Footer */
     /*  */
+        @media (min-width: 1100px) {
 
-        .footerNav {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-    
-        .footerNav ul {
-            display: flex;
-        }
-    
-        .footerIconsKontakt img {
-            display: flex;
-        }
-    
-        #footerInfo {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 10rem;
-        }
-    
-        .footerSocial {
-            display: flex;
-            gap: 10px;
-        }
-    
-        .footerSocial p {
-            font-size: 14px;
-        }
-    
-        .footerSocial {
-            align-items: center;
-        }
-    
-        .footerKontaktHøjre .footerOm {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .footerOm a {
-            color: white;
-        }
-    
-        .footerOm p {
-            font-size: 14px;
-        }
-    
-        .footerOm {
-            align-items: left;
-        }
-    
-        .footerKontaktHøjre a {
-            color: white;
-        }
-    
-        .footerKontaktHøjre {
-            align-items: right;
-        }
-    
-    
-    
-        #footerKontaktInfo {
-            display: flex;
-            justify-content: space-around;
-        }
-                .footerOm .material-icons {
-                    width: 24px;
-                    font-size: 30px;
+            .footerNav {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .footerNav ul {
+                display: flex;
+            }
+            
+            /* .footerIconsKontakt img {
+                display: flex;
+                } */
+                
+                #footerInfo {
+                    display: grid;
+                    grid-template-columns: 1fr auto 1fr;
+                    align-items: center;
+                    gap: 10rem;
                 }
-        
-                .footerOm svg {
-                    width: 28.5px;
-                    height: 30px;
-                    fill: var(--ctaTxt);
+                
+                .footerSocial {
+                    display: flex;
+                    gap: 10px;
                 }
-        
-                .footerKontaktHøjre .fa-location-dot,
-                .footerKontaktHøjre .material-icons {
-                    font-size: 30px;
-                    width: 24px;
-        
+                
+                .footerSocial p {
+                    font-size: 14px;
                 }
-        
-                .footerIcons {
-                    font-size: 30px;
-        
+                
+                .footerSocial {
+                    align-items: center;
                 }
-        
-                .footerOm,
+                
                 .footerKontaktHøjre {
+                    justify-self: end;
+                }
+                .footerKontaktHøjre .footerOm {
                     display: flex;
                     flex-direction: column;
                 }
-        
-                .iconAppend {
-                    display: flex;
+                
+                .footerOm a {
+                    color: var(--ctaTxt);
+                    font-size: 14px;
                 }
+                
+                .footerOm p {
+                    font-size: 14px;
+        }
+        
+        .footerOm {
+            align-items: left;
+        }
+        
+        .footerKontaktHøjre a {
+            color: var(--ctaTxt);
+            font-size: 14px;;
+        }
+        
+        .footerKontaktHøjre {
+            align-items: right;
+        }
+        
+        
+        
+        #footerKontaktInfo {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+        .footerOm .material-icons {
+            width: 24px;
+            font-size: 30px;
+        }
+        
+        .footerOm svg {
+            width: 28.5px;
+            height: 30px;
+            fill: var(--ctaTxt);
+        }
+        
+        .footerOm svg, .footerOm .material-icons{
+            margin-right: 1rem;
+        }
+        
+        .footerKontaktHøjre .fa-location-dot,
+        .footerKontaktHøjre .material-icons {
+            font-size: 30px;
+            width: 24px;
+            margin-right: 1rem;
+            
+        }
+        
+        .footerIcons {
+            font-size: 30px;
+            
+        }
+        
+        .footerOm,
+        .footerKontaktHøjre {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .iconAppend {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    #flexContainerKontaktBottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #kontaktImgBottom{
+        max-width: 45vw;
+    }
+
+    .kontaktFlexTop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: var(--secSpacer);
+    }
+
+    .kontaktFlexTopLeft {
+        padding-right: 3rem;
+    }
+    #kontaktFlexTop {
+        width: 85ch;
+    }
+    .kontaktBold {
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: inline;
+    }
+
+    .kontaktBold:nth-of-type(2) {
+        display: inline-block;
+    }
+
+    .linkKontakt {
+        color: var(--txtColour);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .ctaKontakt {
+        display: flex;
+        justify-self: center;
+    }
 }
-
-/* Isa */
-
-
-
-
-
-
-
-
-
-
+    /* Isa */
+    
+    #opstart p{
+        max-width: 75ch;
+        margin-bottom: var(--medSacer);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -1129,239 +1157,100 @@ p {
 
 
 /* Imilia */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* kasper */
-
-/* .footerNav {
+.iconAppend svg, .iconAppend .material-icons, .iconAppend i{
     display: none;
 }
 
-#footer {
-    background-color: var(--darkGreen);
-    padding: 20px;
-    font-size: 14px;
-    color: var(--ctaTxt);
+.footerIcons{
+    font-size: 25px;
 }
 
-#footerInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    flex: 1;
-}
-
-.footerOm {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 1rem;
-}
-
-#footerKontaktInfo {
-    text-align: center;
-    text-decoration: underline;
-}
-
-#footerKontaktInfo a {
-    display: block;
-    text-decoration: none;
-    color: var(--ctaTxt);
-}
-
-.footerSocial {
-    margin-top: var(--mobileSmlSpacer);
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.footerIcons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footerIcons img {
-    width: 36px;
-    height: 24px;
-    margin-bottom: 4px;
-    filter: brightness(0) invert(1);
-} */
 
 
-/*  */
-/*  */
 
-/* idk hvad jeg skal kalde denne endnu */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #terapiMain {
     margin-left: var(--mobileLrgSpacer);
@@ -1371,6 +1260,7 @@ p {
 #terapiHestFigure {
     margin: 0;
 }
+
 .terapiHestImg {
     width: 100%;
 }
@@ -1393,10 +1283,113 @@ p {
     width: 100%;
 }
 
+#hesteTeknik {
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+}
+
+.afbalancering {
+    margin-top: 1rem;
+}
+
+/*  */
+/* Hundeterapi */
+/*  */
+
+#terapiHundFigure {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HVAD JEG SMED IND FRA HESTETERAPI */
+
 /* Desktop styling */
 @media (min-width: 1100px) {
 
-    /* Fjerner elementer ment for mobile */
+    /* Fjerner burger menu, der kun bruges på mobil */
     header nav svg {
         display: none;
     }
@@ -1457,37 +1450,11 @@ p {
     }
  
     .terapiHestImg {
-        background-image: url('../img/desktop billeder/MassageHestDesktop.jpg');
         background-size: cover;
         width: 40vw;
         border-radius: 6px;
         margin-top: 8vw;
     }
-    
-
-    /* Billeder for hundeterapi */
-
-    
-    #heroImgHundMobile {
-        display: none; /* Fjerner mobilbilledet */
-    }
-
-    #heroImgHund {
-        background-image: url('../img/desktopBilleder/MassageHundDesktop.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 70vh;
-        width: 100%;
-    }
-
-    .terapiHundImg {
-        background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 70vh;
-        width: 100%;
-    }
-
     
     /* Main styling for terapi */
 
@@ -1510,8 +1477,8 @@ p {
 
     #terapiListTekst {
         margin-top: var(--mobileMedSpacer);
-        margin-bottom: 6vw;
-        margin-left: 20vw;
+        margin-inline: 10vw;
+        margin-bottom: 8vh;
     }
 
     /* Pris sektion på hesteterapi */
@@ -1599,9 +1566,80 @@ p {
         gap: 2vw;
     }
 
-    .terapiList {
+    .terapiList1 {
         flex: 1;
         min-width: 300px;
+    }
+
+    .terapiList1 span {
+        color: #349D3A;
+    }
+
+    .terapiList2 {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .terapiList2 span {
+        color: red;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #heroImgHundMobile {
+        display: none; /* Fjerner mobil billedet */
+    }
+
+    #heroImgHund {
+        background-image: url('../img/desktopBilleder/MassageHundDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        width: 100%;
+    }
+
+    .terapiHundImg {
+        background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
+        background-size: cover;
+        max-width: 40vw;
+        border-radius: 6px;
+        margin-top: 18vh;
     }
 
 }
@@ -1736,53 +1774,159 @@ p {
     width: 100%;
 }
 
+#kontaktHero {
+    background-image: url("../img/mobilBilleder/LMHundeOgHestefokusMedTreHunde600.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+
 .footerNav {
     text-decoration: underline;
+}
+#imgForsideTop {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.overrideImg {
+    max-width: 100%;
+    border-radius: 6px;
+} 
+
+#heroVideo {
+    max-width: 100%;
+}
+
+
+#forsideImgBottom {
+    width: 100%;
 }
 
 @media (min-width: 600px) {
     #hundetraeningHero {
         background-image: url("../img/mobilBilleder/LMHundeOgHestefokusLiseMedHunde1100.jpg");
         height: 50vh;
-    }
-}
+    }    
+}    
 @media (min-width: 1100px) {
     .navLink a {
         transition: 0.2s ease, text-decoration-color 0.2s ease;
-    }
+    }    
     .navLink.navActive a {
         color: var(--mainGreen) !important;
         font-weight: bold;
-    }
+    }    
     #sideNav {
         all: unset;
         display: contents;
-    }
+    }    
     
     #sideNavContent {
         align-items: center;
-    }
+    }    
     #hundetraeningHero {
         background-image: url("../img/desktopBilleder/HundetraeningHero.jpg");
         height: 70vh;
-    }
+  }
+
+        #kontaktHero {
+            background-image: url("../img/desktopBilleder/LMHundeOgHestefokusMedTreHunde1920Desktop.jpg");
+            height: 70vh;
+            width: 100%;   }
 
     .sections {
         margin-bottom: var(--secSpacer);
         max-width: 85ch;
     }
-
+=======
+    }    
+    
+    .sections {
+        margin-bottom: var(--secSpacer);
+        max-width: 85ch;
+    }    
+    
     #forloeb, #traening {
         max-width: 85ch !important;
+    }    
+    
+    #flexContainerForsideTop {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        align-items: center;
+        margin-bottom: var(--secSpacer);
+    }    
+    
+    #flexContainerForsideTop div p {
+        margin-block: var(--medSacer);
+    }    
+    
+    #flexContainerForsideTop div {
+        display: flex;
+        flex-direction: column;
+        max-width: 85ch;
+        padding-right: var(--secSpacer);   
+    }    
+    #imgForsideTop {
+        max-width: 35vw;
+        border-radius: 6px;
+    }    
+    #flexContainerForsideTop div h1 {
+        margin-top: 0px;
+    }    
+
+    .sliderForside {
+        margin-bottom: var(--secSpacer);
     }
-}
+    #liseKval {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--secSpacer);
+    }    
+    .overrideImg {
+        max-width: 40vw;
 
-
-
-
-
-
-
-
-
+    }
+    
+    #liseKval div {
+        display: flex;
+        flex-direction: column;
+        max-width: 85ch;
+        padding-right: var(--secSpacer);
+    }    
+    
+    #liseKval div p {
+        margin-block: var(--medSacer);
+    }    
+    
+    #liseKval .cta {
+        align-self: center;
+    }    
+    
+    
+    #anmeldelseSec {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-content: space-between;
+        margin-bottom: var(--bigSpacer);
+    }
+    
+    .anmeldelse {
+        margin-bottom: 0;
+        justify-self: space-between;
+    }
+    .anmeldelse .fa-star{
+        font-size: 27px;
+    }
+    .anmeldelse:nth-of-type(2n){
+        justify-self: end;
+    }
+}    
 
