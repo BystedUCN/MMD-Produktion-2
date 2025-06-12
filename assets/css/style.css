@@ -1396,6 +1396,7 @@ p {
 #terapiHestFigure {
     margin: 0;
 }
+
 .terapiHestImg {
     width: 100%;
 }
@@ -1418,10 +1419,28 @@ p {
     width: 100%;
 }
 
+#hesteTeknik {
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+}
+
+.afbalancering {
+    margin-top: 1rem;
+}
+
+/*  */
+/* Hundeterapi */
+/*  */
+
+#terapiHundFigure {
+    margin: 0;
+}
+
+
 /* Desktop styling */
 @media (min-width: 1100px) {
 
-    /* Fjerner elementer ment for mobile */
+    /* Fjerner burger menu, der kun bruges på mobil */
     header nav svg {
         display: none;
     }
@@ -1494,7 +1513,7 @@ p {
 
     
     #heroImgHundMobile {
-        display: none; /* Fjerner mobilbilledet */
+        display: none; /* Fjerner mobil billedet */
     }
 
     #heroImgHund {
@@ -1508,9 +1527,9 @@ p {
     .terapiHundImg {
         background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
         background-size: cover;
-        background-position: center;
-        height: 70vh;
-        width: 100%;
+        max-width: 40vw;
+        border-radius: 6px;
+        margin-top: 18vh;
     }
 
     
@@ -1535,8 +1554,8 @@ p {
 
     #terapiListTekst {
         margin-top: var(--mobileMedSpacer);
-        margin-bottom: 6vw;
-        margin-left: 20vw;
+        margin-inline: 10vw;
+        margin-bottom: 8vh;
     }
 
     /* Pris sektion på hesteterapi */
