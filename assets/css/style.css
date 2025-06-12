@@ -1467,12 +1467,13 @@ p {
 
     /* Billeder for hundeterapi */
 
+    
     #heroImgHundMobile {
-        display: none;
+        display: none; /* Fjerner mobilbilledet */
     }
 
     #heroImgHund {
-        background-image: url('../img/desktop billeder/MassageHundDesktop.jpg');
+        background-image: url('../img/desktopBilleder/MassageHundDesktop.jpg');
         background-size: cover;
         background-position: center;
         height: 70vh;
@@ -1490,7 +1491,7 @@ p {
     
     /* Main styling for terapi */
 
-    #terapiMain {
+    #terapiMain { /* Sørger for spacing i siderne */
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -1501,6 +1502,10 @@ p {
 
     .terapiStart {
         display: flex;
+    }
+
+    .terapiStart p {
+        margin-right: 1rem;
     }
 
     #terapiListTekst {
