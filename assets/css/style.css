@@ -1384,7 +1384,34 @@ p {
 
 
 /*  */
+/* Hundetræning */
 /*  */
+
+/* Billede og tekst i starten */
+
+@media (min-width: 1100px) {
+
+    .traeningStart {
+        display: flex;
+        gap: 7vw;
+    }
+
+    .traeningStart figure img {
+        margin-top: 3vw;
+    }
+
+    .traeningStart figure img, .traeningStart article {
+        flex: 1 1 130%;
+    }
+
+}
+
+
+
+/*  */
+/* Terapi siderne */
+/*  */
+
 
 /* idk hvad jeg skal kalde denne endnu */
 
