@@ -858,11 +858,12 @@ p {
         }
     }
     
-    #flexContainerKontaktBottom {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+    
+    
+    
+    
+    
+
     #kontaktImgBottom{
         max-width: 45vw;
     }
@@ -1047,8 +1048,30 @@ p {
 
 
 
+/*  */
+/* Kontakt og Info */
+/*  */
+
+.kontaktTider {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
 
 
+/*  */
+/* Sliders */
+/*  */
+
+@media (min-width: 1400px) {
+
+    .sliderContent {
+        display: flex;
+    }
+
+
+
+}
 
 
 
