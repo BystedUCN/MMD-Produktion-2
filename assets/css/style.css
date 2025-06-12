@@ -211,20 +211,13 @@ main {
     object-fit: cover;
 }
 
-#forsideImgBottom {
-    width: 100%;
-    height: 294px;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
-#forsideImgBottom img {
+#kontaktImgBottom {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 /* Anmeldelser */
 
@@ -946,10 +939,53 @@ p {
         }
     }
     
+    #flexContainerKontaktBottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #kontaktImgBottom{
+        max-width: 45vw;
+    }
+
+    .kontaktFlexTop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: var(--secSpacer);
+    }
+
+    .kontaktFlexTopLeft {
+        padding-right: 3rem;
+    }
+    #kontaktFlexTop {
+        width: 85ch;
+    }
+    .kontaktBold {
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: inline;
+    }
+
+    .kontaktBold:nth-of-type(2) {
+        display: inline-block;
+    }
+
+    .linkKontakt {
+        color: var(--txtColour);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .ctaKontakt {
+        display: flex;
+        justify-self: center;
+    }
 }
     /* Isa */
     
-    
+    #opstart p{
+        max-width: 75ch;
+        margin-bottom: var(--medSacer);
+    }
     
     
     
@@ -1788,8 +1824,21 @@ p {
     width: 100%;
 }
 
+#kontaktHero {
+    background-image: url("../img/mobilBilleder/LMHundeOgHestefokusMedTreHunde600.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+
 .footerNav {
     text-decoration: underline;
+}
+
+#forsideImgBottom {
+    width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -1819,11 +1868,15 @@ p {
         height: 70vh;
     }
 
+        #kontaktHero {
+            background-image: url("../img/desktopBilleder/LMHundeOgHestefokusMedTreHunde1920Desktop.jpg");
+            height: 70vh;
+            width: 100%;   }
+
     .sections {
         margin-bottom: var(--secSpacer);
         max-width: 85ch;
     }
-
     #forloeb, #traening {
         max-width: 85ch !important;
     }
