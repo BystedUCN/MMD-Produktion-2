@@ -224,13 +224,14 @@ main {
     line-height: 25px;
 }
 
-#hundeFitnessFigure{
+#hundeFitnessFigure {
     margin: 0;
 }
 
-.mobilBillede {
+.hundetraningIntroBillede {
     width: 100%;
     padding: 0;
+    align-items: flex-start;
 }
 
 /* Card billeder */
@@ -252,11 +253,6 @@ main {
 /*  */
 /* Hundeterapi */
 /*  */
-
-#hundeterapiMain {
-    margin-left: var(--mobileLrgSpacer);
-    margin-right: var(--mobileLrgSpacer);
-}
 
 .hundeterapiHeaderImg {
     display: block;
@@ -287,6 +283,14 @@ main {
     max-width: 100%;
 }
 
+.terapiPris>*:nth-child(2),
+.terapiPris>*:nth-child(3),
+.terapiPris>*:nth-child(5),
+.terapiPris>*:nth-child(6),
+.terapiPris>*:nth-child(8),
+.terapiPris>*:nth-child(9) {
+    justify-self: end;
+}
 #terapiMiniTekst {
     font-size: 10px;
     max-width: 32ch;
@@ -313,57 +317,10 @@ main {
 /* Hesteterapi */
 /*  */
 
-/* .terapiColumnØverst {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-/* flytter den tredje div til at være den anden div, for at få billedet til at være rigtigt på mobil. */
-/* .terapiColumnØverst>div:nth-child(3) {
-    order: 2;
-}
-
-.terapiColumnØverst>div:nth-child(2) {
-    order: 3;
-}
-
-.terapiColumnØverst>div:nth-child(1) {
-    order: 1;
-}
-
-
-
-#hesteterapiMain {
-    margin-left: var(--mobileLrgSpacer);
-    margin-right: var(--mobileLrgSpacer);
-}
-
-.hesteterapiImg {
-    display: block;
-    border-radius: 6px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 372px;
-    height: auto;
-}
-
-#heroImgHestMobile {
-    background-image: url('../img/mobil billeder/MassageHestMassoer1100.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 275px;
-    width: 100%;
-} */
 
 /*  */
 /* Kontakt */
 /*  */
-
-#kontakt-main {
-    margin-inline: var(--mobileSmlSpacer); 
-    /* 1,25rem = 20px */
-}
 
 #kontakt-h1 {
     margin-bottom: 2rem;
@@ -666,29 +623,9 @@ p {
         max-width: 825px;
     }
 
-
     /*  */
-    /* DESKTOP: 2-column layout */
+    /* slider */
     /*  */
-
-    /* .sections{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    
-    #venstre {
-        grid-column: 1;
-    }
-
-    #højre {
-        grid-column: 2;
-    } */
-
-    /*  */
-    /* Slider desktop */    
-    /*  */
-
     .slide {
         grid-template-columns: 1fr 1.5fr;
         grid-template-rows: auto;
@@ -700,6 +637,10 @@ p {
         order: 2;
     }
     
+    /*  */
+    /*  */
+    /*  */
+
     h3 {
         font-size: 2rem;
     }
@@ -726,6 +667,9 @@ p {
     /* Hundetræning */
     /* */
 
+        .hundeTraeningIntroBillede {
+            max-width: 25vw;
+        }
         .dogSlider .carouselTrack {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -939,9 +883,7 @@ p {
         width: 85ch;
     }
     .kontaktBold {
-        font-weight: 600;
         font-size: 1.5rem;
-        display: inline;
     }
 
     .kontaktBold:nth-of-type(2) {
@@ -949,16 +891,24 @@ p {
     }
 
     .linkKontakt {
-        color: var(--txtColour);
         font-size: 1.5rem;
-        font-weight: 400;
     }
     .ctaKontakt {
         display: flex;
         justify-self: center;
     }
 }
-    /* Isa */
+#kontaktImgBottom {
+    width: 100%;
+}
+.kontaktBold {
+    font-weight: 600;
+    display: inline;
+}
+.linkKontakt {
+    color: var(--txtColour);
+    font-weight: 400;
+}
     
     #opstart p{
         max-width: 75ch;
@@ -1252,10 +1202,6 @@ p {
 
 
 
-#terapiMain {
-    margin-left: var(--mobileLrgSpacer);
-    margin-right: var(--mobileLrgSpacer);
-}
 
 #terapiHestFigure {
     margin: 0;
@@ -1270,7 +1216,7 @@ p {
     border-radius: 6px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    max-width: 372px;
+    width: 100%;
     height: auto;
 }
 
@@ -1298,12 +1244,20 @@ p {
 
 #terapiHundFigure {
     margin: 0;
+    width: 40vw;
 }
 
+.hundeTraeningIntroBillede {
+    width: 100%;
+}
 
-
-
-
+#heroImgHund {
+    background-image: url("../img/mobilBilleder/MassageHund1100.jpg");
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -1383,15 +1337,11 @@ p {
     /* Hundetræning */
     /*  */
 
-    #hundetræningMain {
-        margin-left: var(--bigSpacer);
-        margin-right: var(--bigSpacer);
-        line-height: 25px;
-    }
-
     .traeningStart {
         display: flex;
-        gap: 8vw;
+        justify-content: space-between;
+        
+        /* gap: 8vw; */
     }
 
     .traeningStart article div p {
@@ -1405,13 +1355,6 @@ p {
     
     /* Hundetræning billeder */
     
-    .traeningStart figure img {
-        margin-top: 9vw;
-    }
-
-    .traeningStart figure img, .traeningStart article {
-        flex: 1 1 140%;
-    }
     
 }
 
@@ -1539,21 +1482,14 @@ p {
     
     /* Main styling for terapi */
 
-    #terapiMain { /* Sørger for spacing i siderne */
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    #terapiMain p {
-        max-width: 85ch;
-    }
-
     .terapiStart {
         display: flex;
+        flex: 1;
     }
 
     .terapiStart p {
         margin-right: 1rem;
+        max-width: 75ch;
     }
 
     #terapiListTekst {
@@ -1567,13 +1503,14 @@ p {
     /* Book tid & pris sektion */
 
     #terapiBookTid {
-        display: flex;
-        align-items: center;
-        gap: 10vw;
+        display: inline;
     }
-
+    .ctaTerapi {    
+        margin: 0 auto
+    }
     #terapiBookTid p {
         margin: 0;
+        margin-top: var(--medSacer);
     }
 
     #terapiBookTid button.cta {
@@ -1590,6 +1527,7 @@ p {
         max-width: 100%; 
     }
 
+
     /* spacing i eller mellem sectioner */
 
     #terapiPrisSection, .terapiLister, .terapiListTekst {
@@ -1599,10 +1537,6 @@ p {
 
     .afbalancering {
         margin-bottom: .5rem;
-    }
-
-    #terapiSpacing {
-        margin-bottom: 1.5rem;
     }
 
     #hestePris {
@@ -1664,49 +1598,7 @@ p {
     .terapiList2 span {
         color: red;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #heroImgHundMobile {
-        display: none; /* Fjerner mobil billedet */
-    }
-
+    
     #heroImgHund {
         background-image: url('../img/desktopBilleder/MassageHundDesktop.jpg');
         background-size: cover;
@@ -1716,11 +1608,9 @@ p {
     }
 
     .terapiHundImg {
-        background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
-        background-size: cover;
-        max-width: 40vw;
+        width: 40vw;
         border-radius: 6px;
-        margin-top: 18vh;
+        margin-top: 150px;
     }
 
 }
@@ -1913,17 +1803,15 @@ p {
         height: 70vh;
   }
 
-        #kontaktHero {
-            background-image: url("../img/desktopBilleder/LMHundeOgHestefokusMedTreHunde1920Desktop.jpg");
-            height: 70vh;
-            width: 100%;   }
+    #kontaktHero {
+        background-image: url("../img/desktopBilleder/LMHundeOgHestefokusMedTreHunde1920Desktop.jpg");
+        height: 70vh;
+        width: 100%;   }
 
     .sections {
         margin-bottom: var(--secSpacer);
         max-width: 85ch;
-    }
-=======
-    }    
+    }  
     
     .sections {
         margin-bottom: var(--secSpacer);
@@ -1933,6 +1821,12 @@ p {
     #forloeb, #traening {
         max-width: 85ch !important;
     }    
+
+    #introHundetraening p{
+        margin-bottom: var(--bigSpacer);
+        max-width: 65ch;
+        padding-right: var(--bigSpacer);
+    }
     
     #flexContainerForsideTop {
         display: flex;

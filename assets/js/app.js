@@ -162,19 +162,25 @@ export function navActive() {
       });
 };
 
-export function heroSwapper () {
-   function swapHero(e) { 
-        if (e.matches) {
-            const container = document.getElementById("heroVideo");
-            if (container) {
-            container.outerHTML = `
-            <video autoplay muted loop playsinline id="heroVideo" src="./assets/img/HeaderVideo.mov"></video>
-            `;
-            }
-        }
-    };
+export function heroSwapper() {
+    function swapHero(e) {
+      const wrapper = document.getElementById("heroWrapper");
+      if (!wrapper) return;
   
-  const mediaQuery = window.matchMedia("(min-width: 1100px)");
-  swapHero(mediaQuery);
-  mediaQuery.addEventListener("change", swapHero);
-};
+      if (e.matches) {
+        // Desktop: swap på desktop
+        wrapper.innerHTML = `
+          <video autoplay muted loop playsinline id="heroVideo" src="./assets/img/HeaderVideo.mov"></video>
+        `;
+      } else {
+        // Mobile: swap på mobil
+        wrapper.innerHTML = `
+          <video autoplay muted loop playsinline id="heroVideo" src="./assets/img/MassageHundLMHundeOgHestefokus.mov"></video>
+        `;
+      }
+    }
+  
+    const mediaQuery = window.matchMedia("(min-width: 1100px)");
+    swapHero(mediaQuery);
+    mediaQuery.addEventListener("change", swapHero);
+  }
