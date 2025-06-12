@@ -188,7 +188,7 @@ main {
 #forsideMain {
     margin-left: var(--mobileLrgSpacer);
     margin-right: var(--mobileLrgSpacer);
-    line-height: 25px;
+    line-height: 150%;
 }
 
 
@@ -196,7 +196,7 @@ main {
 
 
 
-#forsideImgTop {
+/* #forsideImgTop {
     width: 100%;
     height: 212px;
     overflow: hidden;
@@ -224,7 +224,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 /* Anmeldelser */
 
@@ -1775,9 +1775,14 @@ p {
 #heroVideo {
     width: 100vw;
 }
+#forsideImgTop, #forsideImgBottom {
+    margin: 0;
+}
 
-
-
+#forsideImgTop img, #forsideImgBottom img {
+border-radius: 6;
+width: 100%;
+}
 
 
 
