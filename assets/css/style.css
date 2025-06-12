@@ -1643,9 +1643,22 @@ p {
         gap: 2vw;
     }
 
-    .terapiList {
+    .terapiList1 {
         flex: 1;
         min-width: 300px;
+    }
+
+    .terapiList1 span {
+        color: #349D3A;
+    }
+
+    .terapiList2 {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .terapiList2 span {
+        color: red;
     }
 
 }
