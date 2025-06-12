@@ -1,184 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LM Hunde- & Hestefokus</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script type="module" src="./assets/js/forside.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
-        <video autoplay loop playsinline id="heroVideo" src="./assets/img/Video.mov"></video>
-        <nav>
+      <video
+        autoplay
+        loop
+        playsinline
+        id="heroVideo"
+        src="./assets/img/HeaderVideo.mov"
+      ></video>
+      <nav>
         <!-- Dette kommer fra https://uxdesign.cc/the-menu-210bec7ad80c -->
-            <button class="menu" id="burgerMenu"
-                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-                aria-label="Main Menu">
-                <svg width="100" height="100" viewBox="0 0 100 100">
-                    <path class="line line1"
-                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                    <path class="line line2" d="M 20,50 H 80" />
-                    <path class="line line3"
-                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-            </button>
-            
-            <div id="overlay"></div>
-            <div id="sideNav">
-                <div id="sideNavContent">
-                    <ul>
-                        <li class="navForside navLink"><a href="./index.html">Forside</a></li>
-                        <li class="navHundetræning navLink"><a href="./hundetræning.html">Hundetræning</a></li>
-                        <li class="navHundeterapi navLink"><a href="./hundeterapi.html">Hundeterapi</a></li>
-                        <li class="navHesteterapi navLink"><a href="./hesteterapi.html">Hesteterapi</a></li>
-                        <li class="navKontakt navLink"><a href="./kontakt.html">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <button
+          class="menu"
+          id="burgerMenu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+
+        <div id="overlay"></div>
+        <div id="sideNav">
+          <div id="sideNavContent">
+            <ul>
+              <li class="navForside navLink">
+                <a href="./index.html">Forside</a>
+              </li>
+              <li class="navHundetræning navLink">
+                <a href="./hundetræning.html">Hundetræning</a>
+              </li>
+              <li class="navHundeterapi navLink">
+                <a href="./hundeterapi.html">Hundeterapi</a>
+              </li>
+              <li class="navHesteterapi navLink">
+                <a href="./hesteterapi.html">Hesteterapi</a>
+              </li>
+              <li class="navKontakt navLink">
+                <a href="./kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main id="forsideMain">
-        <section class="sections">
-            <div>
-                <h1 id="venstre">Velkommen til LM hunde- & Hestefokus</h1>
-                <p id="venstre">Hvis du er hunde- og/eller hesteejer, og vil du din firbenede ven det bedste, så er du kommet til det rette sted. </p>
-                <p id="venstre">Mit navn er Lise og jeg tilbyder fysiurgisk terapi til både hund og hest, så vi i fællesskab kan sikre, at dit kæledyr får de bedste forudsætninger for at undgå skader. Skulle skaden være sket, kan jeg også hjælpe dem gennem genoptræning.</p>
+      <section class="sections">
+        <div>
+          <h1 id="venstre">Velkommen til LM hunde- & Hestefokus</h1>
+          <p id="venstre">
+            Hvis du er hunde- og/eller hesteejer, og vil du din firbenede ven
+            det bedste, så er du kommet til det rette sted.
+          </p>
+          <p id="venstre">
+            Mit navn er Lise og jeg tilbyder fysiurgisk terapi til både hund og
+            hest, så vi i fællesskab kan sikre, at dit kæledyr får de bedste
+            forudsætninger for at undgå skader. Skulle skaden være sket, kan jeg
+            også hjælpe dem gennem genoptræning.
+          </p>
+        </div>
+        <div id="forsideImgTop">
+          <img
+            loading="lazy"
+            id="højre"
+            class="forsideImg"
+            src="./assets/img/mobilBilleder/LMhundeOghestefokusLiseMedHundeOgHest600.jpg"
+            alt="Billede af lise med hendes dyr"
+          />
+        </div>
+        <div>
+          <p id="venstre">
+            Jeg tilbyder også træning til hunde i alle aldre, størrelser og
+            erfaringsniveauer, så er du på udkig efter spændende og sjov
+            aktiviteter i kan lave sammen, kunne et af mine træningstilbud være
+            noget for jer!
+          </p>
+        </div>
+      </section>
+      <section class="sliderSection">
+        <article class="carousel">
+          <button class="arrow arrowLeft" aria-label="Previous slide">
+            &#8249;
+          </button>
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="sliderContent">
+                <h3>Din hund fortjener velvære og fri bevægelse</h3>
+                <p class="sliderTxt">
+                  Med fysiurgisk terapi hjælper jeg din hund til et sundere og
+                  gladere liv – på deres præmisser. Fysiurgisk behandling er
+                  ikke kun til skader – det er også til dig, der vil passe på
+                  din hunds krop før problemerne opstår.Opdag fordelene ved
+                  hundeterapi
+                </p>
+                <button class="cta">
+                  <a href="./hundeterapi.html"
+                    >Opdag fordelene ved hundeterapi</a
+                  >
+                </button>
+              </div>
+              <img
+                loading="lazy"
+                class="sliderImg"
+                src="./assets/img/mobilBilleder/MassageHund600.jpg"
+                alt="Hunde Massage"
+              />
             </div>
-            <div id="forsideImgTop">
-                <img loading="lazy" id="højre" class="forsideImg" src="./assets/img/mobilBilleder/LMhundeOghestefokusLiseMedHundeOgHest600.jpg" alt="Billede af lise med hendes dyr">
-            </div>
-            <div>
-                <p id="venstre">Jeg tilbyder også træning til hunde i alle aldre, størrelser og erfaringsniveauer, så er du på udkig efter spændende og sjov aktiviteter i kan lave sammen, kunne et af mine træningstilbud være noget for jer!</p>
-            </div>
-        </section>
-        <section class="sliderSection">
-            <article class="carousel">
-                <button class="arrow arrowLeft" aria-label="Previous slide">&#8249;</button>
-                <div class="carouselTrack">
-                    <div class="slide">
-                        <div class="sliderContent">
-                            <h3>Din hund fortjener velvære og fri bevægelse</h3>
-                            <p class="sliderTxt">Med fysiurgisk terapi hjælper jeg din hund til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hunds krop før problemerne opstår.Opdag fordelene ved hundeterapi</p>
-                            <button class="cta"><a href="./hundeterapi.html">Opdag fordelene ved hundeterapi</a></button>
-                        </div>
-                        <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/MassageHund600.jpg" alt="Hunde Massage">
-                    </div>
-        
-                    <div class="slide">
-                        <div class="sliderContent">
-                            <h3>Din hest fortjener velvære og fri bevægelse</h3>
-                            <p>Med fysiurgisk terapi hjælper jeg din hest til et sundere og gladere liv – på deres præmisser. Fysiurgisk behandling er ikke kun til skader – det er også til dig, der vil passe på din hests krop før problemerne opstår.</p>
-                            <button class="cta"><a href="./hesteterapi.html">Opdag fordelene ved hesteterapi </a></button>
-                        </div>
-                        <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/MassageHestMassoer600.jpg" alt="Heste Massage">
-                    </div>
-                    <div class="slide">
-                        <div class="sliderContent">
-                            <h3>Hundetræning</h3>
-                            <p>Skal din firbenede ven mentalt stimuleres, eller vil du  gerne lære nye ting sammen med din hund?</p>
-                            <button class="cta"><a href="./hundetræning.html">Opdag fordelene ved hundetræning</a></button>
-                        </div>
-                        <img loading="lazy" class="sliderImg" src="./assets/img/mobilBilleder/LMHundeOgHestefokusLiseMedHunde600.jpg" alt="Hundetræning">
-                    </div>
-                </div>
-                <button class="arrow arrowRight" aria-label="Next slide">&#8250;</button>
-            </article>
-        
-            <div class="dots"></div>
-        </section>
-        <section class="sections">
-            <div>
-                <h2 id="skjulEl">Mine kvalifikationer</h2>
-                <p id="skjulEl">Mit navn er Lise, og jeg tilbyder hundetræning samt fysiurgisk terapi til hunde og heste, med fokus på rehabilitering, bevægelighed og velvære.</p>
-            </div>
-            <div id="forsideImgBottom">
-                <img loading="lazy" id="højre" src="" alt="Billede af alle hendes certifikater">
-            </div>
-            <div>
-                <p id="venstre">Jeg er dyrlægeeksamineret fysiurgisk hundeterapeut og certificeret fysiurgisk hesteterapeut, uddannet ved Center for Dyreterapi. Uddannelserne er internationalt godkendt af IICT samt IEBWA/IEBWAs smådyrssektion, hvilket sikrer at dit kæledyr bliver afbalanceret på et højt fagligt niveau! Jeg har taget efteruddannelsen til Kranio Sakral Terapeut både til hund og hest.</p>
 
-                <p id="venstre">Derudover så er jeg uddannet hundetræner gennem Dansk Kennel Klub, hvor jeg har fået en fremragende forståelse for træningsteknikker og hundeadfærd. Inden jeg startede mit eget, var jeg hundetræningsinstruktør i Dansk Kennel Klub, og min erfaring på området har givet mig et solidt fundament inden for hundetræning.</p>
-
-                <p id="venstre">Gennem min erfaring fra hundetræning blev jeg motiveret til, at tage dyreadfærdskonsulent med speciale i hundeadfærd uddannelsen, som jeg lige nu er igang med. Dette har motiveret mig til at tilbyde hundetræning gennem min egen virksomhed.</p>
-
-                <button class="cta" id="venstre"><a href="./kontakt.html">Find eller kontakt mig</a></button>
+            <div class="slide">
+              <div class="sliderContent">
+                <h3>Din hest fortjener velvære og fri bevægelse</h3>
+                <p>
+                  Med fysiurgisk terapi hjælper jeg din hest til et sundere og
+                  gladere liv – på deres præmisser. Fysiurgisk behandling er
+                  ikke kun til skader – det er også til dig, der vil passe på
+                  din hests krop før problemerne opstår.
+                </p>
+                <button class="cta">
+                  <a href="./hesteterapi.html"
+                    >Opdag fordelene ved hesteterapi
+                  </a>
+                </button>
+              </div>
+              <img
+                loading="lazy"
+                class="sliderImg"
+                src="./assets/img/mobilBilleder/MassageHestMassoer600.jpg"
+                alt="Heste Massage"
+              />
             </div>
-        </section>
-        <section class="sections">
-            <h2>Anmeldelser</h2>
-            <article id="venstre">
-                <div id="anmeldelse">
-                    <!-- her skal der være 5 stjerner -->
-                    <p>Lise er bare fantastisk til at få løsnet op ved hunde. Vores vært blevet meget mere afslappet siden vi har være hos Lise.</p>
-                    <p>Marianne - 3. maj 2025</p>
-                </div>
-            </article>
-            <article id="højre">
-                <div id="anmeldelse">
-                    <!-- her skal der være 5 stjerner -->
-                    <p>Det er altid en super god og professionel oplevelse,og behandlingen foregår altid på hundens premisser. Mine hunde Leo og Meyer elsker at komme forbi og Lise yderst dygtig.</p>
-                    <p>Anja - 2. april 2025</p>
-                </div>
-            </article>
-            <article id="venstre">
-                <div id="anmeldelse">
-                    <!-- her skal der være 5 stjerner -->
-                    <p>Bare en dejlig oplevelse og en hund som viser meget fremgang. Han elsker at komme på besøg og vil ikke hjem igen.</p>
-                    <p>Gry - 20. marts 2025</p>
-                </div>
-            </article>
-            <article id="højre">
-                <div id="anmeldelse">
-                    <!-- her skal der være 5 stjerner -->
-                    <p>Vil give mine bedste anbefalinger til Lise. Jeg har følt mig hørt, og Lise har hjulpet med gode løsninger på den vildbasse af en puddelhund jeg har.</p>
-                    <p>Ronja - 11. januar 2025</p>
-                </div>
-            </article>
-        </section>
+            <div class="slide">
+              <div class="sliderContent">
+                <h3>Hundetræning</h3>
+                <p>
+                  Skal din firbenede ven mentalt stimuleres, eller vil du gerne
+                  lære nye ting sammen med din hund?
+                </p>
+                <button class="cta">
+                  <a href="./hundetræning.html"
+                    >Opdag fordelene ved hundetræning</a
+                  >
+                </button>
+              </div>
+              <img
+                loading="lazy"
+                class="sliderImg"
+                src="./assets/img/mobilBilleder/LMHundeOgHestefokusLiseMedHunde600.jpg"
+                alt="Hundetræning"
+              />
+            </div>
+          </div>
+          <button class="arrow arrowRight" aria-label="Next slide">
+            &#8250;
+          </button>
+        </article>
+
+        <div class="dots"></div>
+      </section>
+      <section class="sections">
+        <div>
+          <h2 id="skjulEl">Mine kvalifikationer</h2>
+          <p id="skjulEl">
+            Mit navn er Lise, og jeg tilbyder hundetræning samt fysiurgisk
+            terapi til hunde og heste, med fokus på rehabilitering, bevægelighed
+            og velvære.
+          </p>
+        </div>
+        <div id="forsideImgBottom">
+          <img
+            loading="lazy"
+            id="højre"
+            src=""
+            alt="Billede af alle hendes certifikater"
+          />
+        </div>
+        <div>
+          <p id="venstre">
+            Jeg er dyrlægeeksamineret fysiurgisk hundeterapeut og certificeret
+            fysiurgisk hesteterapeut, uddannet ved Center for Dyreterapi.
+            Uddannelserne er internationalt godkendt af IICT samt IEBWA/IEBWAs
+            smådyrssektion, hvilket sikrer at dit kæledyr bliver afbalanceret på
+            et højt fagligt niveau! Jeg har taget efteruddannelsen til Kranio
+            Sakral Terapeut både til hund og hest.
+          </p>
+
+          <p id="venstre">
+            Derudover så er jeg uddannet hundetræner gennem Dansk Kennel Klub,
+            hvor jeg har fået en fremragende forståelse for træningsteknikker og
+            hundeadfærd. Inden jeg startede mit eget, var jeg
+            hundetræningsinstruktør i Dansk Kennel Klub, og min erfaring på
+            området har givet mig et solidt fundament inden for hundetræning.
+          </p>
+
+          <p id="venstre">
+            Gennem min erfaring fra hundetræning blev jeg motiveret til, at tage
+            dyreadfærdskonsulent med speciale i hundeadfærd uddannelsen, som jeg
+            lige nu er igang med. Dette har motiveret mig til at tilbyde
+            hundetræning gennem min egen virksomhed.
+          </p>
+
+          <button class="cta" id="venstre">
+            <a href="./kontakt.html">Find eller kontakt mig</a>
+          </button>
+        </div>
+      </section>
+      <section class="sections">
+        <h2>Anmeldelser</h2>
+        <article id="venstre">
+          <div id="anmeldelse">
+            <!-- her skal der være 5 stjerner -->
+            <p>
+              Lise er bare fantastisk til at få løsnet op ved hunde. Vores vært
+              blevet meget mere afslappet siden vi har være hos Lise.
+            </p>
+            <p>Marianne - 3. maj 2025</p>
+          </div>
+        </article>
+        <article id="højre">
+          <div id="anmeldelse">
+            <!-- her skal der være 5 stjerner -->
+            <p>
+              Det er altid en super god og professionel oplevelse,og
+              behandlingen foregår altid på hundens premisser. Mine hunde Leo og
+              Meyer elsker at komme forbi og Lise yderst dygtig.
+            </p>
+            <p>Anja - 2. april 2025</p>
+          </div>
+        </article>
+        <article id="venstre">
+          <div id="anmeldelse">
+            <!-- her skal der være 5 stjerner -->
+            <p>
+              Bare en dejlig oplevelse og en hund som viser meget fremgang. Han
+              elsker at komme på besøg og vil ikke hjem igen.
+            </p>
+            <p>Gry - 20. marts 2025</p>
+          </div>
+        </article>
+        <article id="højre">
+          <div id="anmeldelse">
+            <!-- her skal der være 5 stjerner -->
+            <p>
+              Vil give mine bedste anbefalinger til Lise. Jeg har følt mig hørt,
+              og Lise har hjulpet med gode løsninger på den vildbasse af en
+              puddelhund jeg har.
+            </p>
+            <p>Ronja - 11. januar 2025</p>
+          </div>
+        </article>
+      </section>
     </main>
     <footer id="footer">
-        <nav class="footerNav">
-            <!-- Gemt væk på mobile, men kommer frem på desktop -->
-            <ul>
-                <li><a href="./index.html">Forside</a></li>
-                <li><a href="./hundetræning.html">Hundetræning</a></li>
-                <li><a href="./hundeterapi.html">Hundeterapi</a></li>
-                <li><a href="./hesteterapi.html">Hesteterapi</a></li>
-                <li><a href="./kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    
-        <!-- Icons for hendes medier (skal laves links/cta'er på dem) -->
-        <section id="footerKontaktInfo">
-            <!-- Alt info i footer -->
-            <div id="footerInfo">
-                <div class="footerOm">
-                    <p>LM Hunde- & Hestefokus ved Lise Dam Mortensen</p>
-                    <a href="tel:+4526282337">Tlf. +45 26 28 23 37</a>
-                </div>
-    
-                <div class="footerSocial">
-                    <div class="footerIcons">
-                        <img loading="lazy" src="./assets/img/ikoner/square-facebook-brands-solid.svg" alt="Facebook ikon" />
-                        <p>Facebook</p>
-                    </div>
-                    <div class="footerIcons">
-                        <img loading="lazy" src="./assets/img/ikoner/instagram-brands-solid.svg" alt="Instagram" />
-                        <p>Instagram</p>
-                    </div>
-                    <div class="footerIcons">
-                        <img loading="lazy" src="./assets/img/ikoner/youtube-brands-solid.svg" alt="YouTube" />
-                        <p>YouTube</p>
-                    </div>
-                </div>
-                <div class="footerKontaktHøjre">
-                    <address>Toftegårdvej 120, 9440 Aabybro</address>
-                    <a href="mailto:info@lmhundeoghestefokus.dk">Email: info@lmhundeoghestefokus.dk</a>
-                </div>
+      <nav class="footerNav">
+        <!-- Gemt væk på mobile, men kommer frem på desktop -->
+        <ul>
+          <li><a href="./index.html">Forside</a></li>
+          <li><a href="./hundetræning.html">Hundetræning</a></li>
+          <li><a href="./hundeterapi.html">Hundeterapi</a></li>
+          <li><a href="./hesteterapi.html">Hesteterapi</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icons for hendes medier (skal laves links/cta'er på dem) -->
+      <section id="footerKontaktInfo">
+        <!-- Alt info i footer -->
+        <div id="footerInfo">
+          <div class="footerOm">
+            <p>LM Hunde- & Hestefokus ved Lise Dam Mortensen</p>
+            <a href="tel:+4526282337">Tlf. +45 26 28 23 37</a>
+          </div>
+
+          <div class="footerSocial">
+            <div class="footerIcons">
+              <img
+                loading="lazy"
+                src="./assets/img/ikoner/square-facebook-brands-solid.svg"
+                alt="Facebook ikon"
+              />
+              <p>Facebook</p>
             </div>
-        </section>
-        </footer>
-</body>
+            <div class="footerIcons">
+              <img
+                loading="lazy"
+                src="./assets/img/ikoner/instagram-brands-solid.svg"
+                alt="Instagram"
+              />
+              <p>Instagram</p>
+            </div>
+            <div class="footerIcons">
+              <img
+                loading="lazy"
+                src="./assets/img/ikoner/youtube-brands-solid.svg"
+                alt="YouTube"
+              />
+              <p>YouTube</p>
+            </div>
+          </div>
+          <div class="footerKontaktHøjre">
+            <address>Toftegårdvej 120, 9440 Aabybro</address>
+            <a href="mailto:info@lmhundeoghestefokus.dk"
+              >Email: info@lmhundeoghestefokus.dk</a
+            >
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
