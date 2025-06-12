@@ -188,11 +188,9 @@ main {
 /*  */
 #flexContainerTop, .sliderForside, #liseKval, .anmeldelseSec {
     margin-block: var(--mobileSmlSpacer);
+
 }
 
-#liseKval .cta {
-    margin: 0 auto;
-}
 
 /* Anmeldelser */
 
@@ -919,10 +917,53 @@ p {
         }
     }
     
+    #flexContainerKontaktBottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #kontaktImgBottom{
+        max-width: 45vw;
+    }
+
+    .kontaktFlexTop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: var(--secSpacer);
+    }
+
+    .kontaktFlexTopLeft {
+        padding-right: 3rem;
+    }
+    #kontaktFlexTop {
+        width: 85ch;
+    }
+    .kontaktBold {
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: inline;
+    }
+
+    .kontaktBold:nth-of-type(2) {
+        display: inline-block;
+    }
+
+    .linkKontakt {
+        color: var(--txtColour);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .ctaKontakt {
+        display: flex;
+        justify-self: center;
+    }
 }
     /* Isa */
     
-    
+    #opstart p{
+        max-width: 75ch;
+        margin-bottom: var(--medSacer);
+    }
     
     
     
@@ -1760,6 +1801,15 @@ p {
     width: 100%;
 }
 
+#kontaktHero {
+    background-image: url("../img/mobilBilleder/LMHundeOgHestefokusMedTreHunde600.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+
 .footerNav {
     text-decoration: underline;
 }
@@ -1777,6 +1827,10 @@ p {
     max-width: 100%;
 }
 
+
+#forsideImgBottom {
+    width: 100%;
+}
 
 @media (min-width: 600px) {
     #hundetraeningHero {
@@ -1803,6 +1857,18 @@ p {
     #hundetraeningHero {
         background-image: url("../img/desktopBilleder/HundetraeningHero.jpg");
         height: 70vh;
+  }
+
+        #kontaktHero {
+            background-image: url("../img/desktopBilleder/LMHundeOgHestefokusMedTreHunde1920Desktop.jpg");
+            height: 70vh;
+            width: 100%;   }
+
+    .sections {
+        margin-bottom: var(--secSpacer);
+        max-width: 85ch;
+    }
+=======
     }    
     
     .sections {
