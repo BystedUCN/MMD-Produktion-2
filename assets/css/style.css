@@ -1323,69 +1323,6 @@ p {
 
 /* kasper */
 
-/* .footerNav {
-    display: none;
-}
-
-#footer {
-    background-color: var(--darkGreen);
-    padding: 20px;
-    font-size: 14px;
-    color: var(--ctaTxt);
-}
-
-#footerInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    flex: 1;
-}
-
-.footerOm {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 1rem;
-}
-
-#footerKontaktInfo {
-    text-align: center;
-    text-decoration: underline;
-}
-
-#footerKontaktInfo a {
-    display: block;
-    text-decoration: none;
-    color: var(--ctaTxt);
-}
-
-.footerSocial {
-    margin-top: var(--mobileSmlSpacer);
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.footerIcons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footerIcons img {
-    width: 36px;
-    height: 24px;
-    margin-bottom: 4px;
-    filter: brightness(0) invert(1);
-} */
-
-
-/*  */
-/*  */
-
 /* idk hvad jeg skal kalde denne endnu */
 
 #terapiMain {
@@ -1507,31 +1444,6 @@ p {
         border-radius: 6px;
         margin-top: 8vw;
     }
-    
-
-    /* Billeder for hundeterapi */
-
-    
-    #heroImgHundMobile {
-        display: none; /* Fjerner mobil billedet */
-    }
-
-    #heroImgHund {
-        background-image: url('../img/desktopBilleder/MassageHundDesktop.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 70vh;
-        width: 100%;
-    }
-
-    .terapiHundImg {
-        background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
-        background-size: cover;
-        max-width: 40vw;
-        border-radius: 6px;
-        margin-top: 18vh;
-    }
-
     
     /* Main styling for terapi */
 
@@ -1659,6 +1571,64 @@ p {
 
     .terapiList2 span {
         color: red;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #heroImgHundMobile {
+        display: none; /* Fjerner mobil billedet */
+    }
+
+    #heroImgHund {
+        background-image: url('../img/desktopBilleder/MassageHundDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        width: 100%;
+    }
+
+    .terapiHundImg {
+        background-image: url('../img/desktop billeder/LedmobiliseringHundDesktop.jpg');
+        background-size: cover;
+        max-width: 40vw;
+        border-radius: 6px;
+        margin-top: 18vh;
     }
 
 }
