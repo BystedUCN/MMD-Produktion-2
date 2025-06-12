@@ -601,7 +601,7 @@ p {
 
 #footerKontaktInfo {
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #footerKontaktInfo a {
@@ -623,12 +623,12 @@ p {
     align-items: center;
 }
 
-.footerIcons img {
+/* .footerIcons img {
     width: 36px;
     height: 24px;
     margin-bottom: 4px;
     filter: brightness(0) invert(1);
-}
+} */
 
 /* Navn - Adresse */
     /* e-mail */
@@ -833,117 +833,131 @@ p {
     /*  */
     /* Footer */
     /*  */
+        @media (min-width: 1100px) {
 
-        .footerNav {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-    
-        .footerNav ul {
-            display: flex;
-        }
-    
-        .footerIconsKontakt img {
-            display: flex;
-        }
-    
-        #footerInfo {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 10rem;
-        }
-    
-        .footerSocial {
-            display: flex;
-            gap: 10px;
-        }
-    
-        .footerSocial p {
-            font-size: 14px;
-        }
-    
-        .footerSocial {
-            align-items: center;
-        }
-    
-        .footerKontaktHøjre .footerOm {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .footerOm a {
-            color: white;
-        }
-    
-        .footerOm p {
-            font-size: 14px;
-        }
-    
-        .footerOm {
-            align-items: left;
-        }
-    
-        .footerKontaktHøjre a {
-            color: white;
-        }
-    
-        .footerKontaktHøjre {
-            align-items: right;
-        }
-    
-    
-    
-        #footerKontaktInfo {
-            display: flex;
-            justify-content: space-around;
-        }
-                .footerOm .material-icons {
-                    width: 24px;
-                    font-size: 30px;
+            .footerNav {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .footerNav ul {
+                display: flex;
+            }
+            
+            /* .footerIconsKontakt img {
+                display: flex;
+                } */
+                
+                #footerInfo {
+                    display: grid;
+                    grid-template-columns: 1fr auto 1fr;
+                    align-items: center;
+                    gap: 10rem;
                 }
-        
-                .footerOm svg {
-                    width: 28.5px;
-                    height: 30px;
-                    fill: var(--ctaTxt);
+                
+                .footerSocial {
+                    display: flex;
+                    gap: 10px;
                 }
-        
-                .footerKontaktHøjre .fa-location-dot,
-                .footerKontaktHøjre .material-icons {
-                    font-size: 30px;
-                    width: 24px;
-        
+                
+                .footerSocial p {
+                    font-size: 14px;
                 }
-        
-                .footerIcons {
-                    font-size: 30px;
-        
+                
+                .footerSocial {
+                    align-items: center;
                 }
-        
-                .footerOm,
+                
                 .footerKontaktHøjre {
+                    justify-self: end;
+                }
+                .footerKontaktHøjre .footerOm {
                     display: flex;
                     flex-direction: column;
                 }
-        
-                .iconAppend {
-                    display: flex;
+                
+                .footerOm a {
+                    color: var(--ctaTxt);
+                    font-size: 14px;
                 }
+                
+                .footerOm p {
+                    font-size: 14px;
+        }
+        
+        .footerOm {
+            align-items: left;
+        }
+        
+        .footerKontaktHøjre a {
+            color: var(--ctaTxt);
+            font-size: 14px;;
+        }
+        
+        .footerKontaktHøjre {
+            align-items: right;
+        }
+        
+        
+        
+        #footerKontaktInfo {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+        .footerOm .material-icons {
+            width: 24px;
+            font-size: 30px;
+        }
+        
+        .footerOm svg {
+            width: 28.5px;
+            height: 30px;
+            fill: var(--ctaTxt);
+        }
+        
+        .footerOm svg, .footerOm .material-icons{
+            margin-right: 1rem;
+        }
+        
+        .footerKontaktHøjre .fa-location-dot,
+        .footerKontaktHøjre .material-icons {
+            font-size: 30px;
+            width: 24px;
+            margin-right: 1rem;
+            
+        }
+        
+        .footerIcons {
+            font-size: 30px;
+            
+        }
+        
+        .footerOm,
+        .footerKontaktHøjre {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .iconAppend {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
 }
-
-/* Isa */
-
-
-
-
-
-
-
-
-
-
+    /* Isa */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -1129,6 +1143,17 @@ p {
 
 
 /* Imilia */
+.iconAppend svg, .iconAppend .material-icons, .iconAppend i{
+    display: none;
+}
+
+.footerIcons{
+    font-size: 25px;
+}
+
+
+
+
 
 
 
