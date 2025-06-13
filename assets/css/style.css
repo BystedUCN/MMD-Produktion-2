@@ -857,12 +857,7 @@ p {
             align-items: center;
         }
     }
-    
-    #flexContainerKontaktBottom {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+  
     #kontaktImgBottom{
         max-width: 45vw;
     }
@@ -935,6 +930,7 @@ p {
     border-radius: 6px;
 }    
 
+
     
     
     
@@ -1122,19 +1118,51 @@ p {
 
 
 
+
+
+
+
+
+/* Footer for mobil */
+
+/* Wrapper for the entire footer if not already set */
+
+
+/* Bytter rundt på address og E-mail */
+
+
+@media (max-width: 550px) {
+    .footer { 
+        display: flex;
+        flex-direction: column;
+    } 
+
+
+    /* Bytter rundt på tlf og Addresse */
+    .footerKontaktHøjre {
+        order: 1; 
+    }
+
+    .footerSocial {
+        order: 2; 
+    }
+    
 
 
 
 /* Imilia */
-.iconAppend svg, .iconAppend .material-icons, .iconAppend i{
-    display: none;
+
+
+
+    .iconAppend svg, .iconAppend .material-icons, .iconAppend i{
+        display: none;
+    }
+
+    .footerIcons{
+        font-size: 25px;
+    }
+
 }
-
-.footerIcons{
-    font-size: 25px;
-}
-
-
 
 
 
