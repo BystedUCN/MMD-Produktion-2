@@ -1,5 +1,5 @@
-import {burger, slider, fetchData, navActive} from "./app.js";
+import {burger, slider, getData, navActive} from "./app.js";
 burger();
 slider()
-fetchData()
+getData()
 navActive()

@@ -1,4 +1,4 @@
-import {burger, fetchData, navActive} from "./app.js";
+import {burger, getData, navActive} from "./app.js";
 burger();
-fetchData()
+getData()
 navActive()
