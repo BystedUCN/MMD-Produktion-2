@@ -581,7 +581,7 @@ p {
         font-size: 2.5rem;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     main {
         margin-inline: var(--secSpacer);
@@ -646,13 +646,11 @@ p {
         padding-block: 1rem;
     }
     
-    p {
-        font-size: 1.5rem;
-    }
+
     
     .cta {
-        height: 65px;
-        font-size: 1.5rem;
+        height: 60px;
+        font-size: 1.2rem;
         margin-top: 1.5rem;
     }
     
@@ -1384,16 +1382,10 @@ p {
     .traeningStart {
         display: flex;
         justify-content: space-between;
-        
-        /* gap: 8vw; */
     }
 
     .traeningStart article div p {
         margin-bottom: 1rem;
-    }
-
-    .skjulElMobil {
-        display: contents;
     }
 
     
@@ -1508,7 +1500,7 @@ p {
     #heroImgHestMobile {
         display: none;
     }
-    
+     
     #heroImgHest {
         background-image: url('../img/desktopBilleder/MassageHestMassoerDesktop.jpg');
         background-size: cover;
@@ -1775,6 +1767,107 @@ p {
 
 
 
+dialog.modal {
+    border-radius: 6px;
+    border: transparent;
+    padding: 0;
+        
+}
+
+
+.modalContent {
+    position: relative;
+    padding: var(--mobileMedSpacer);
+    background: white;
+    border-radius: 6px;
+    max-width: 95vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.663);
+    scrollbar-width: none;
+    overflow-y: auto;
+}
+
+.modalContent::-webkit-scrollbar {
+    display: none;
+}
+
+.modalTitle {
+    padding-right: 2rem;
+}
+
+.modalContent h4 {
+    margin-block: 0;
+}
+
+.modalContent .rightGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: var(--mobileSmlSpacer);
+}
+
+.modalContent .rightGrid p {
+    font-size: 0.9rem;
+}
+
+.closeBtn {
+    border: none;
+    /* Fjerner kanten */
+    background: transparent;
+    /* Fjerner baggrundsfarve */
+    outline: none;
+    /* Fjerner fokusramme */
+    cursor: pointer;
+    /* Gør det tydeligt det er klikbart */
+    font-size: 3rem;
+    position: absolute;
+    top: 0px;
+    right: 10px; 
+}
+.modalImage {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1947,5 +2040,27 @@ p {
     .anmeldelse:nth-of-type(2n){
         justify-self: end;
     }
+    .modalFlex {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .rightGrid > div {
+        align-self: center;
+    }
+        .modalImgContainer {
+        padding-right: var(--bigSpacer);
+    }
+    .punkter li {
+        font-size: 1.2rem;
+    }
+    .modalContent .rightGrid p {
+    font-size: 1.2rem;   
+    }
+
+    .modalContent h4 {
+        margin-block: 0; 
+        font-size: 1.5rem;  
+    }
+
 }    
 
