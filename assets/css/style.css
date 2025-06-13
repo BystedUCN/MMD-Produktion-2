@@ -856,11 +856,12 @@ p {
         }
     }
     
-    #flexContainerKontaktBottom {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+    
+    
+    
+    
+    
+
     #kontaktImgBottom{
         max-width: 45vw;
     }
@@ -1045,8 +1046,32 @@ p {
 
 
 
+/*  */
+/* Kontakt og Info */
+/*  */
+
+.kontatTider 
+
+/*  */
+/* Sliders */
+/*  */
+
+@media (min-width: 1100px) {
+
+    /* Kontakt og Info */
+    .kontaktTider {
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+    }
 
 
+    /* Sliders */
+    .sliderContent {
+        display: flex;
+    }
+
+};
 
 
 
