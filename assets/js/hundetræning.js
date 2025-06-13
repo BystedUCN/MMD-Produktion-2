@@ -17,7 +17,7 @@ async function init() {
         hvalpCard.innerHTML = `
         <div class="sliderContent">
         <div id="træningCardImg">
-        <img loading="lazy" class="sliderImg" src="${hvalpeEl.acf.billede.url}" alt="${hvalpeEl.acf.billede.alt}">
+        <img loading="lazy" class="cardImg" src="${hvalpeEl.acf.billede.url}" alt="${hvalpeEl.acf.billede.alt}">
         </div>
         <h3>${hvalpeEl.acf.overskrift}</h3>
         <p class="sliderTxt">${hvalpeEl.acf.brodtekst}</p> 
@@ -30,7 +30,7 @@ async function init() {
         smagCard.innerHTML = `
         <div class="sliderContent">
         <div id="træningCardImg">
-        <img loading="lazy" class="sliderImg" src="${smagEl.acf.billede.url}" alt="${smagEl.acf.billede.alt}">
+        <img loading="lazy" class="cardImg" src="${smagEl.acf.billede.url}" alt="${smagEl.acf.billede.alt}">
         </div>
         <h3>${smagEl.acf.overskrift}</h3>
         <p class="sliderTxt">${smagEl.acf.brodtekst}</p> 
@@ -44,7 +44,7 @@ async function init() {
         rallyCard.innerHTML = `
         <div class="sliderContent">
         <div id="træningCardImg">
-        <img loading="lazy" class="sliderImg" src="${rallyEl.acf.billede.url}" alt="${rallyEl.acf.billede.alt}">
+        <img loading="lazy" class="cardImg" src="${rallyEl.acf.billede.url}" alt="${rallyEl.acf.billede.alt}">
         </div>
         <h3>${rallyEl.acf.overskrift}</h3>
         <p class="sliderTxt">${rallyEl.acf.brodtekst}</p> 
@@ -58,7 +58,7 @@ async function init() {
         HFCard.innerHTML = `
         <div class="sliderContent">
         <div id="træningCardImg">
-        <img loading="lazy" class="sliderImg" src="${HFEl.acf.billede.url}" alt="${HFEl.acf.billede.alt}">
+        <img loading="lazy" class="cardImg" src="${HFEl.acf.billede.url}" alt="${HFEl.acf.billede.alt}">
         </div>
         <h3>${HFEl.acf.overskrift}</h3>
         <p class="sliderTxt">${HFEl.acf.brodtekst}</p> 
@@ -71,7 +71,7 @@ async function init() {
         sporCard.innerHTML = `
         <div class="sliderContent">
         <div id="træningCardImg">
-        <img loading="lazy" class="sliderImg" src="${sporEl.acf.billede.url}" alt="${sporEl.acf.billede.alt}">
+        <img loading="lazy" class="cardImg" src="${sporEl.acf.billede.url}" alt="${sporEl.acf.billede.alt}">
         </div>
         <h3>${sporEl.acf.overskrift}</h3>
         <p class="sliderTxt">${sporEl.acf.brodtekst}</p> 
@@ -85,7 +85,7 @@ async function init() {
         NWCard.innerHTML = `
         <div class="sliderContent">
         <div id="træningCardImg">
-        <img loading="lazy" class="sliderImg" src="${NWCardEl.acf.billede.url}" alt="${NWCardEl.acf.billede.alt}">
+        <img loading="lazy" class="cardImg" src="${NWCardEl.acf.billede.url}" alt="${NWCardEl.acf.billede.alt}">
         </div>
         <h3>${NWCardEl.acf.overskrift}</h3>
         <p class="sliderTxt">${NWCardEl.acf.brodtekst}</p> 

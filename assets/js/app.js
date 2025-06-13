@@ -237,7 +237,7 @@ const cardClass = Object.keys(dataMap).find(c => card.classList.contains(c));
         }
         <p class = "modalText">${item.acf.ny_linje_med_tekst_2}</p>
         
-        <button class = "cta">Styrk jeres bånd her!</button>
+        <button class = "cta ctaModal">Styrk jeres bånd her!</button>
         </div>
         `
   
