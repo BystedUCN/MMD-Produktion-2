@@ -1378,6 +1378,7 @@ dialog.modal {
 
 .hundeTraeningIntroBillede {
     width: 100%;
+    border-radius: 6px;
 }
 
 #heroImgHund {
