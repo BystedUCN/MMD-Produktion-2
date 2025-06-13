@@ -1158,11 +1158,21 @@ p {
         display: none;
     }
 
+    #footerKontaktInfo #footerInfo .footerOm p {
+        text-align: center;
+        font-size: 15px;
+    }
+    
     .footerIcons{
         font-size: 25px;
     }
-
+    
 }
+
+#footerKontaktInfo #footerInfo .footerOm p {
+    text-align: left;
+}
+
 
 
 
